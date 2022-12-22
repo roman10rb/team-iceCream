@@ -1,0 +1,23 @@
+.products 
+{
+    width: 100%;
+    height: 1051px;
+    background-repeat: no-repeat;
+    background-image: url(../images/backdropdesktop@1x.jpg);
+}
+.products__type {
+    display: flex;
+}
+.products__item-picture {
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.products__item-img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
