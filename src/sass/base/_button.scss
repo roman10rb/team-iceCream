@@ -1,4 +1,33 @@
 // кнопки Hero//
+.hero__link {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+    color: #000000;
+	padding: 11px 26px;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+   border-color: #0A8817;
+}
+   &:focus {
+   color: #FCFCFC;
+    }
+
+   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    padding: 12px 34px;
+    line-height: 1.29;
+    }
+}
 .hero__button {
     display: flex;
     align-items: center;
@@ -36,6 +65,31 @@
     border-radius: 10px;
     }
 }
+.hero__link-second {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+	padding: 11px;
+	color:  #F8D24E;
+    text-decoration-line: underline;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover {
+    color: #0A8817;
+}
+ &:focus {
+    color: #FCFCFC;
+}
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    padding: 12px;
+    line-height: 1.29;
+    }
+}
 .hero__button-second {
     display: flex;
     align-items: center;
@@ -46,8 +100,8 @@
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.25;
-	min-width: 106px;
-	padding: 11px 26px;
+	// min-width: 106px;
+	padding: 11px;
     border-radius: 8px;
 	color:  #F8D24E;
     border: none;
@@ -64,6 +118,14 @@
     color:
     rgba(171, 171, 171, 1);
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        min-width: 134px;
+        padding: 12px;
+        line-height: 1.29;
+        border-radius: 10px;
+        }
+    
 }
 .hero__button-offer {
   display: flex;
