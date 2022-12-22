@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/_modal.scss">
+</head>
+<body>
+    <!-- Модалка мапа Полтави -->
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+        <svg class="icon-cloce-black" width="24" height="24">
+        <use href="./images/iconsSprite.svg#icon-cloce-black"></use>
+        </svg>
+        </button>
+        <h1 class="modal-heading">Our Locations</h1>
+        <div class="map">
+            <a href="https://goo.gl/maps/XzLzhx87Stx5TUyM9">
+            </a>
+        </div>
+        <div ><button class="button-modal-submit" type="submit">Open map</button>
+            </div>
+    </div>
+</div>
+<!-- Модалка франшиза -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+        <svg class="icon-cloce-black">
+        <use href="./images/iconsSprite.svg#icon-cloce-black"></use>
+        </svg>
+        </button>
+        <h1 class="modal-heading">Thank you for your interest in owning an Ice Cream shop</h1>
+        <div class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</div>
+    <form class="modal-form">
+        <div class="form__field">
+            <input
+            class="modal__input"
+            type="text"
+            name="name-field"
+            id="name"
+            placeholder="Name"
+            />
+        </div>
+        <div class="form__field">
+            <input
+            class="modal__input"
+            type="text"
+            name="name-field"
+            id="phone"
+            placeholder="Phone"
+            />
+        </div>
+        <div class="form__field">
+            <input
+            class="modal__input"
+            type="text"
+            name="name-field"
+            id="email"
+            placeholder="Email"
+            />
+        </div>
+        <div class="modal__textarea">
+            <textarea
+              class="modal__form-message"
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Comment"
+              ></textarea>
+        </div>
+        <button class="button-modal-submit" type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>
