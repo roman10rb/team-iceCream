@@ -53,9 +53,9 @@
 
 .modal{
   position: absolute;
-  top: 6%;
-  left: 30%;
-  /* transform: translate(-50%, -50%) scale(1); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 568px;
   background-color: var(--secondary-background-color);
   border: 2px solid var(--border-outline-modal-color);
