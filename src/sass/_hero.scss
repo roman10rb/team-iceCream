@@ -1,0 +1,232 @@
+
+/* Розділ resset (тимчасовий) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Розділ базових налаштвань (тимчасовий) */
+
+.hero__left-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero__title {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.guide-wrap__item {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero-features__thumb {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero-features__image {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.overlay-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero__right-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.image-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero-service__wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.hero-service__item-cafes, .hero-service__item-trucks {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* позиціонування елементів */
+
+.hero {
+  
+  border: 0;
+}
+
+.hero--overlay {
+  max-width: 1200px;
+  max-height: 664px;
+  margin: 0 auto;
+  
+  background-image: url(../images/img-hero/png/point-line.png);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 16px 0 16px;
+  border: 0;
+}
+
+.hero__title {
+
+  margin-top: 45px;
+  width: 367px;
+
+  font-family: Seymour One, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: black;
+}
+
+.guide-wrap {
+  margin-top: 28px;
+}
+
+.guide-wrap__list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.guide-wrap__item-btn {
+  width: 134px;
+  height: 42px;
+
+  margin-right: 12px;
+  border: 2px solid;
+  border-color: #F8D24E;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.guide-wrap__link {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0 12px 0;
+}
+
+.guide-wrap__item-ref {
+  width: 154px;
+  height: 40px;
+  
+  margin-right: 12px;
+  border: 2px solid;
+  border-color: #F8D24E;
+  border-radius: 4px;
+  
+  text-align: center;
+}
+
+.hero-features {
+  margin-top: 42px;
+  display: flex;
+}
+
+.hero-features__image {
+  margin-right: 16px;
+}
+
+.hero-features__thumb {
+  align-self: flex-end;
+  width: 200px;
+}
+
+.hero-features__thumb-link {
+  width: 100%;
+}
+
+.overlay-wrap {
+  align-self: flex-end;
+
+  position: relative;
+  overflow: hidden;
+  height: 72px;
+}
+
+.hero-features__overlay {
+  width: 200px;
+    
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+  transform: translateY(100%);
+}
+
+.hero-features__thumb-link:hover .hero-features__overlay {
+  transform: translateY(0);
+}
+
+.hero-features__icon {
+  background-color: green;
+}
+
+.hero__right-wrap {
+  display: flex;
+}
+
+.hero-service__item-cafes {
+  width: 52px;
+  height: 77px;
+
+  margin-top: 53px;
+  margin-left: 24px;
+}
+
+.hero-service__item-trucks {
+  width: 79px;
+  height: 77px;
+
+  margin-top: 16px;
+}
+
