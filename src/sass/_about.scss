@@ -94,7 +94,7 @@ $breakpoints:(
     }
 
 }
-.section-about__p-title{
+.section-about__label{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
@@ -248,8 +248,8 @@ text-align: center;
     top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 568px;
-    height: 449px;
+    width: 280px;
+    height: 459px;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
@@ -257,8 +257,9 @@ text-align: center;
    align-items: center;
    gap: 32px;
    border: 2px solid #F8D24E;
-   @media screen and(max-width:567px) {
-    width: 320px;
+   @media screen and(min-width:768px) {
+    width: 568px;
+    height: 449px;
     
     
    }
@@ -302,20 +303,26 @@ padding-top: 32px;
 }
 .section-about__iframe{
     border-radius: 10px;
-    @media screen and(max-width:567px) {
-        width: 320px;
+    width: 224px;
+height: 199px;
+border: 0;
+    @media screen and(min-width:768px) {
+        width: 448px;
+      height: 205px;
         
        }
 }
 .section-about__modal-text{
     font-family: Montserrat;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.4;
-letter-spacing: 0em;
-text-align: left;
-@media screen and(max-width:567px) {
-    text-align: center;;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    letter-spacing: 0em;   
+   text-align: center;
+   width: 224px;
+   height: 140px;
+@media screen and(min-width:768px) {
+    font-size: 16px;
     
    }
 
