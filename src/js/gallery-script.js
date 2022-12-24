@@ -8,6 +8,8 @@ new Swiper('.image-slider',{
     disableOnInteraction: false
   },
 
+  speed:2000,
+
  // Infinite
   loop: true,
 
