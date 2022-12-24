@@ -89,14 +89,16 @@ img {
 
 .hero--overlay {
   max-width: 1200px;
-  max-height: 664px;
+  height: 664px;
   margin: 0 auto;
   
-  background-image: url(../images/img-hero/png/point-line.png);
+  background-image: url(../images/img-hero/png/point-line.png), 
+  url(../images/img-hero/png/hero-plate-icecream.png), 
+  url(../images/img-hero/png/hero-smile-icecream.png);
 
-  background-size: contain;
+  background-size: contain, auto, auto;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom, left 16px bottom 67px, right 92px bottom;
 }
 
 .container {
@@ -198,9 +200,7 @@ img {
   display: flex;
 }
 
-.hero-features__image {
-  margin-right: 16px;
-}
+
 
 .hero-features__thumb {
   align-self: flex-end;
