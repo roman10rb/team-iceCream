@@ -1,59 +1,65 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: rgba(132, 161, 120, 1);
-}
-.footer__title {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.23;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-margin-left: 22px;
-width: 300px;
+  background-color: rgba(132, 161, 120, 1);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  line-height: 1.22;
 
-color: #FCFCFC;
+  &__text {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
 
-@media screen and (min-width: 768px) {
-    font-size: 26px;
-    width: 352px;
-}
-@media screen and (min-width: 1200px) {
-    font-size: 30px;
-    font-weight: 400;
-    width: 510px;
-}
-}
-.footer__title-second {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 34px;
-line-height: 1.23;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-width: 200px;
-margin-left: 22px;
-color: #FCFCFC;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      width: 352px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      font-weight: 400;
+      width: 510px;
+    }
+  }
 
-@media screen and (min-width: 768px) {
-    font-size: 48px;
-    width: 352px;
+  &__title {
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      width: 352px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      width: 500px;
+    }
+  }
 }
-@media screen and (min-width: 1200px) {
-    font-size: 58px;
-    width: 500px;
+
+.footer__socials__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
+
+.footer__socials__item:not(:last-child) {
+  margin-right: 20px;
 }
-.socials__link-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background-color: rgba(248, 210, 78, 1);
-	fill:  #84A178;
-	}
+
+.footer__socials__link {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(248, 210, 78, 1);
+  fill: #84a178;
+}
+.footer__socials__item:hover .footer__socials__link,
+.footer__socials__item:focus .footer__socials__link {
+  fill: #fcfcfc;
+}
