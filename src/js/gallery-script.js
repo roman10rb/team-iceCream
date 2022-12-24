@@ -14,6 +14,9 @@ new Swiper('.image-slider',{
   loop: true,
 
 // Effect
-  effect: 'flip',
+  effect: 'cube',
+  cubeEffect: {
+    shadow: false,
+  },
   
 });
