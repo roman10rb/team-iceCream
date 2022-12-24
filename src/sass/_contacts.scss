@@ -265,14 +265,14 @@ p {
 /*-------- button----------- */
 
 .contacts__btns {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
+display: flex;
+justify-content: center;
+gap: 16px;
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-  }
+ @media screen and (max-width: 767px) {
+ flex-direction: column;
+align-items: center;
+ }
 }
 
 .reviews__button {
@@ -340,3 +340,13 @@ p {
     border-color: rgba(171, 171, 171, 1);
   }
 }
+
+.reviews__button:focus .button-icon,
+.reviews__button-agreement:focus .button-icon
+{
+    fill: #fcfcfc;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
