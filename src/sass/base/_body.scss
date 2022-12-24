@@ -2,8 +2,8 @@ body {
     width: auto;
     height: auto;
     background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
+    background-size:contain;
+    background-repeat: repeat;
     background-image: url('../images/body-bg/body_bg_s@x1.jpg');
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -32,4 +32,20 @@ body {
             (min-resolution: 2dppx) {
             background-image: url('../images/body-bg/body_bg_l@2x.jpg');            }
         }
+                animation: moveSlideshow 180s linear infinite;
+                }
+        
+        @keyframes moveSlideshow {
+            // 0% {
+            //     background-position: 0vw 0vh;
+            //     }
+
+            // 50% {
+            //      background-position: -50vw -100vh;
+            //     }
+
+            100% {
+                 background-position: 150vw 400vh;
+                }
+
     }
