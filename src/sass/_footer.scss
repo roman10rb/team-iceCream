@@ -142,11 +142,18 @@
   height: 1px;
   left: 0px;
   bottom: 62px;
+
   @media screen and(min-width:768px) {
     bottom: 38px;
   }
+
+  @media screen and(min-width:1200px) {
+    bottom: 32px;
+  }
+
   background-color: #e1e1e1;
 }
+
 .footer__box-copyright {
   max-width: 200px;
   @media screen and(min-width:768px) {

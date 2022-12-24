@@ -199,6 +199,11 @@
     bottom: 38px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__line {
+    bottom: 32px;
+  }
+}
 
 .footer__box-copyright {
   max-width: 200px;
