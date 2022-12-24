@@ -53,16 +53,15 @@ img {
 
 .hero--overlay {
   max-width: 1200px;
-  height: 664px;
+  height: 599px;
   margin: 0 auto;
   
   background-image: url(../images/img-hero/png/point-line.png), 
-  url(../images/img-hero/png/hero-plate-icecream.png), 
-  url(../images/img-hero/png/hero-smile-icecream.png);
+  url(../images/img-hero/png/hero-plate-icecream.png);
 
-  background-size: contain, auto, auto;
+  background-size: contain, auto;
   background-repeat: no-repeat;
-  background-position: bottom, left 16px bottom 67px, right 92px bottom;
+  background-position: bottom, left 16px bottom 67px;
 }
 
 .container {
@@ -166,7 +165,7 @@ img {
   outline: 2px solid red;
   outline-offset: -2px;
 
-  margin-top: 179px;
+  margin-top: 111px;
   margin-left: 257px;
 
   width: 200px;
@@ -184,14 +183,21 @@ img {
 
   position: relative;
   overflow: hidden;
-  height: 72px;
+  height: 80px;
+}
+
+.hero-features__icon {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  margin-top: 24px;
 }
 
 .hero-features__overlay {
   width: 200px;
     
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
 
   transform: translateY(100%);
@@ -217,6 +223,13 @@ img {
   outline-offset: -2px;
 
   display: flex;
+}
+
+.image-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  margin-top: 39px;
 }
 
 .hero-service__item-cafes {
