@@ -1,8 +1,6 @@
 new Swiper('.image-slider',{
-  navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev'
-  },
+  
+  slidesPerView: 1,
 
 // Autoplay
   autoplay: {
@@ -10,10 +8,7 @@ prevEl: '.swiper-button-prev'
     disableOnInteraction: false
   },
 
-// switch slide on click
-  slideToClickedSlide: true,
-
-// Infinite
+ // Infinite
   loop: true,
 
 // Effect
