@@ -1,10 +1,10 @@
 new Swiper('.image-slider',{
-  
+
   slidesPerView: 1,
 
 // Autoplay
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false
   },
 
