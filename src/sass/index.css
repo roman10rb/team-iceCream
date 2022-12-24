@@ -17,39 +17,81 @@ p {
 }
 
 .contacts {
-  width: 1200px;
-  padding-right: 17px;
+  outline: 2px solid black;
+}
+
+.container {
+  outline: 1px solid purple;
   padding-left: 17px;
-  outline: 2px solid brown;
+  padding-right: 17px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .contacts__list {
   display: flex;
-  gap: 32px;
-  margin-bottom: 60px;
-  outline: 1px solid red;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    width: 224px;
+    padding: 40px 24px;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    gap: 32px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+  }
 }
 
 .contacts__item {
-  width: 368px;
-  background: #ffffff;
+  background: #FCFCFC;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  padding: 40px;
-  outline: 1px solid palevioletred;
+}
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    width: 224px;
+    padding: 40px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    width: 368px;
+    padding: 40px;
+    background: #ffffff;
+  }
 }
 
 .contacts__type {
-  box-sizing: border-box;
-  height: 30px;
-  display: inline;
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.04em;
   color: #131313;
-  padding: 4px 14px;
   background: #f8d24e;
+  padding: 4px 14px;
   border-radius: 6px;
 }
 
@@ -75,6 +117,12 @@ p {
   line-height: 183%;
   letter-spacing: 0.04em;
   color: #d6936d;
+}
+
+.contacts__map:hover {
+  -webkit-text-decoration: 1px underline #d6936d;
+          text-decoration: 1px underline #d6936d;
+  text-underline-offset: 2px;
 }
 
 .contacts__timetable {
@@ -122,9 +170,12 @@ p {
 }
 
 /* button */
-/* <symbol id="icon-arrow-btn" viewBox="0 0 32 32">
-<path d="M8.51 3.254c-0.326 0.376-0.51 0.886-0.51 1.417s0.183 1.041 0.51 1.417l8.62 9.924-8.62 9.924c-0.317 0.378-0.493 0.884-0.489 1.41s0.187 1.029 0.51 1.4 0.76 0.583 1.216 0.587c0.457 0.005 0.896-0.198 1.225-0.563l9.851-11.341c0.326-0.376 0.51-0.886 0.51-1.417s-0.183-1.041-0.51-1.417l-9.851-11.341c-0.327-0.376-0.769-0.587-1.231-0.587s-0.905 0.211-1.231 0.587v0z"></path>
-</symbol> */
+.contacts__btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 .reviews__button {
   display: flex;
   justify-content: center;
