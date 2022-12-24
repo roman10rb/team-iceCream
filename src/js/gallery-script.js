@@ -4,7 +4,7 @@ new Swiper('.image-slider',{
 
 // Autoplay
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction: false
   },
 
