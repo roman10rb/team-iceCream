@@ -34,37 +34,7 @@ img {
   outline-offset: -2px;
 }
 
-.hero__title {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
 .guide-wrap__item {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.hero-features__thumb {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.hero-features__image {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.overlay-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.hero__right-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.image-wrap {
   outline: 2px solid red;
   outline-offset: -2px;
 }
@@ -74,16 +44,10 @@ img {
   outline-offset: -2px;
 }
 
-.hero-service__item-cafes, .hero-service__item-trucks {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
 /* позиціонування елементів */
 
 .hero {
   border: 0;
-
   background-color: #84A278;
 }
 
@@ -116,6 +80,9 @@ img {
 }
 
 .hero__title {
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 
   margin-top: 45px;
   width: 367px;
@@ -195,14 +162,13 @@ img {
    }
   }
 
-.hero-features {
+.hero-features__thumb {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   margin-top: 179px;
   margin-left: 257px;
-  display: flex;
-}
 
-.hero-features__thumb {
-  align-self: flex-end;
   width: 200px;
 }
 
@@ -211,6 +177,9 @@ img {
 }
 
 .overlay-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   align-self: flex-end;
 
   position: relative;
@@ -244,10 +213,16 @@ img {
 }
 
 .hero__right-wrap {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   display: flex;
 }
 
 .hero-service__item-cafes {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   margin-top: 53px;
   margin-left: 24px;
 
@@ -255,6 +230,9 @@ img {
 }
 
 .hero-service__item-trucks {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   margin-top: 16px;
 
   text-align: right;
