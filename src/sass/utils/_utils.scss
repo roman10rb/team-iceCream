@@ -1,0 +1,72 @@
+// Змінні для кольорів
+:root {
+    // Main
+    --main-bg-color:#84A178;
+    --secondary-bg-color: #FFFFFF;
+
+    --main-text-color-white: #FCFCFC;
+    --main-text-color-black:#131313;
+    --main-circle-bg-color: #D9D9D9;
+
+    // Modal
+    --modal-bg-color:#FCFCFC;
+    --modal-border-color:#F8D24E;
+    --modal-input-bg:rgba(248, 210, 78, 0.1);
+    --modal-input-border:#84A178;
+
+    // Sections
+    // Header
+    --nav-desktop-accent-color:#F8D24E;
+
+    // Product
+    --ice-cream-circle-color:rgba(156, 190, 143, 0.7);
+    --ice-cream-ingredients-color:rgba(156, 190, 143, 1.0)
+    --ice-cream-box-color:##AEC6A5;
+
+    --ice-coffee-circle-color:rgba(248, 210, 78, 0.7);
+    --ice-coffee-ingredients-color: rgba(248, 210, 78, 1.0);
+    --ice-coffee-box-color:#EFD478;
+
+    --milkshakes-circle-color: rgba(213, 117, 63, 0.7);
+    --milkshakes-ingredients-color:rgba(213, 117, 63, 1.0);
+    --milkshakes-box-color:#D6936D;
+
+    // How its made
+    --him-circle-color:rgba(248, 210, 78, 0.7);
+    --him-icon-color:#000000;
+
+    // Contacts
+    --contacts-title-bg-color:#F8D24E;
+
+    --contacts-adress-text-color:#D6936D;
+    --contacts-hours-text-color:#ABABAB;
+
+    // Footer
+    --copyright-text-color:#7A7A7A;
+
+    // Buttons
+    --button-default-color:#F8D24E;
+    --button-accent-color:#0A8817;
+    --button-disabled-color:#ABABAB;
+
+    --socials-icon-color:#84A178;
+    --socials-icon-bg-color:#F8D24E;
+    --socials-icon-accent-color:#FCFCFC;
+}
+
+.container {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    // tablet screen
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    
+    // desktop screen
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
