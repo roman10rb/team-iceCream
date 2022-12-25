@@ -161,7 +161,7 @@ img {
    }
   }
 
-.hero-features__thumb {
+.features-wrap {
   outline: 2px solid red;
   outline-offset: -2px;
 
@@ -171,7 +171,7 @@ img {
   width: 200px;
 }
 
-.hero-features__thumb-link {
+.features-wrap__link {
   width: 100%;
 }
 
@@ -203,7 +203,7 @@ img {
   transform: translateY(100%);
 }
 
-.hero-features__thumb-link:hover .hero-features__overlay {
+.features-wrap__link:hover .hero-features__overlay {
   transform: translateY(0);
 }
 
