@@ -15,7 +15,7 @@
    
 }
 .products__fon-ice-cream {
-    margin-top: 108px;
+    margin-top: 95px;
     width: 280px;
     height: 420px;
     background: #AEC6A5;
@@ -36,7 +36,7 @@
         }
         //tablet screen
         @media screen and (min-width: 768px) {
-            margin-top: 120px;
+            margin-top: 113px;
             width: 224px;
             height: 428px;
             background: #AEC6A5;
@@ -45,7 +45,7 @@
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
-            margin-top: 183px;
+            margin-top: 135px;
             width: 370px;
             height: 536px;
             background: #AEC6A5;
@@ -54,7 +54,7 @@
         }
 }
 .products__fon-ice-coffe {
-    margin-top: 108px;
+    margin-top: 95px;
     width: 280px;
     height: 420px;
     background: #EFD478;
@@ -66,7 +66,7 @@
     text-align: center;
     //phone screen
     @media screen and (min-width: 480px) {
-        margin-top: 108px;
+        margin-top: 95px;
         width: 280px;
         height: 420px;
         background: #EFD478;
@@ -75,7 +75,7 @@
         }
         //tablet screen
         @media screen and (min-width: 768px) {
-            margin-top: 120px;
+            margin-top: 113px;
             width: 224px;
             height: 428px;
             background: #EFD478;
@@ -84,7 +84,7 @@
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
-            margin-top: 183px;
+            margin-top: 135px;
             width: 370px;
             height: 536px;
             background: #EFD478;
@@ -93,7 +93,7 @@
         }
 }
 .products__fon-milk-shake {
-    margin-top: 108px;
+    margin-top: 95px;
     width: 280px;
     height: 420px;
     background:  #D6936D;
@@ -105,7 +105,7 @@
     text-align: center;
      //phone screen
      @media screen and (min-width: 480px) {
-        margin-top: 108px;
+        margin-top: 95px;
         width: 280px;
         height: 420px;
         background:  #D6936D;
@@ -114,7 +114,7 @@
         }
         //tablet screen
         @media screen and (min-width: 768px) {
-            margin-top: 120px;
+            margin-top: 113px;
             width: 224px;
             height: 428px;
             background:  #D6936D;
@@ -123,7 +123,7 @@
         }
         //desctop screen
         @media screen and (min-width: 1200px) {
-            margin-top: 183px;
+            margin-top: 135px;
             width: 370px;
             height: 536px;
             background:  #D6936D;
@@ -406,15 +406,15 @@
     // прибрати марджін топ
     // margin-top: 58px;
     // margin-bottom: 120px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
    justify-content: center;
     @media screen and (min-width: 768px) {
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
                 @media screen and (min-width: 1200px) {
-                    margin-bottom: 110px;
+                    margin-bottom: 120px;
                 }
 }
 .products__title-main {
