@@ -1,0 +1,276 @@
+// кнопки Hero//
+.hero__link {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+    color: #000000;
+	padding: 11px 26px;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+   border-color: #0A8817;
+}
+   &:focus {
+   color: #FCFCFC;
+    }
+
+   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    padding: 12px 34px;
+    line-height: 1.29;
+    }
+}
+.hero__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+    color: #000000;
+	min-width: 108px;
+	padding: 11px 26px;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+   border-color: #0A8817;
+}
+   &:focus {
+   color: #FCFCFC;
+    }
+
+   &:disabled {
+   border-color:
+    rgba(171, 171, 171, 1);
+    }
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    min-width: 134px;
+    padding: 12px 34px;
+    line-height: 1.29;
+    border-radius: 10px;
+    }
+}
+.hero__link-second {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+	padding: 11px;
+	color:  #F8D24E;
+    text-decoration-line: underline;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover {
+    color: #0A8817;
+}
+ &:focus {
+    color: #FCFCFC;
+}
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    padding: 12px;
+    line-height: 1.29;
+    }
+}
+.hero__button-second {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+	background-color: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+	// min-width: 106px;
+	padding: 11px;
+    border-radius: 8px;
+	color:  #F8D24E;
+    border: none;
+    text-decoration-line: underline;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover {
+    color: #0A8817;
+}
+ &:focus {
+    color: #FCFCFC;
+}
+&:disabled {
+    color:
+    rgba(171, 171, 171, 1);
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        min-width: 134px;
+        padding: 12px;
+        line-height: 1.29;
+        border-radius: 10px;
+        }
+    
+}
+.hero__button-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  background-color: #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  min-width: 152px;
+  padding: 12px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:disabled {
+    background-color: rgba(171, 171, 171, 1);
+    border-color: rgba(171, 171, 171, 1);
+  }
+}
+// ---------//
+// Кнопки для секції About//
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  background-color: #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  min-width: 164px;
+  padding: 12px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:disabled {
+    background-color: rgba(171, 171, 171, 1);
+    border-color: rgba(171, 171, 171, 1);
+  }
+}
+.button-icon {
+  margin-left: 4px;
+  fill: currentColor;
+
+  &:focus {
+    fill: #fcfcfc;
+  }
+}
+// --------------//
+// Кнопки для секції Customer reviews//
+.reviews__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  background-color: #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  min-width: 196px;
+  padding: 12px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  &:disabled {
+    background-color: rgba(171, 171, 171, 1);
+    border-color: rgba(171, 171, 171, 1);
+  }
+}
+
+.reviews__button-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  min-width: 196px;
+  padding: 12px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    border-color: #0a8817;
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+  }
+}
+// -------------//

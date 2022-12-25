@@ -7,7 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <!-- Slider Swiper in Gallery section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     <link rel="stylesheet" href="./sass/index.scss" />
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -18,30 +24,42 @@
     </header>
     <main>
       <!-- Pavlo M. (hero) -->
-      <include src="./partials/hero.html"></include>
+        <include src="./partials/hero.html"></include>
 
       <!-- Світлана (products) -->
-      <include src="./partials/products.html"></include>
+         <include src="./partials/products.html"></include>
 
-      <!-- Ярослав Бондар (advantages) -->
+      <!-- Vladislav (about) -->
+        <include src="./partials/about.html"></include>
+
+      <!-- Ярослава Якушева (advantages) -->
       <include src="./partials/advantages.html"></include>
 
-        <!-- Ганна (contacts) -->
-      <include src="./partials/contacts.html"></include>
+      <!-- Vladislav (gallery) -->
+        <include src="./partials/gallery.html"></include>
 
-        <!-- Vladislav (about) -->
-        <include src="./partials/about.html"></include>
+      <!-- Olexandr Novyk (Customer Reviews) -->
+        <include src="./partials/сustomerReviews.html"></include>
+
+      <!-- Ганна (contacts) -->
+        <include src="./partials/contacts.html"></include>
 
     </main>
     <footer>
+      
       <!-- Василенко Максим -->
         <include src="./partials/footer.html"></include>
+
     </footer>
 
     <!--Юлия Тиндик  (Button) -->
     <include src="./partials/button.html"></include>
 
+    <!-- Olexandr Novyk (modals) -->
+    <include src="./partials/modal.html"></include>
+
     <!-- <include src="./partials/example.html"></include> -->
     
   </body>
+
 </html>
