@@ -1,7 +1,8 @@
 .products {
     width: 100%;
     justify-content: center;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url(../images/backdropdesktop@1x.jpg);
     background-position: center;
     margin: 0 auto;
@@ -9,6 +10,8 @@
 .products__container {
     width: 100%;
     justify-content: center;
+    padding: 60px 0;
+    // додав падінг
    
 }
 .products__fon-ice-cream {
@@ -140,7 +143,7 @@
         }
         //tablet screen
         @media screen and (min-width: 768px) {
-            justify-content: space-between;
+            justify-content: center;
             display: flex;
             flex-wrap: wrap;
         }
@@ -185,8 +188,10 @@
 }
 .products__item-fon {
     position: absolute;
-    background-color: rgba(156, 190, 143, 0.7);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    // background-color: rgba(156, 190, 143, 0.7);
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -195,8 +200,8 @@
     //phone screen
     @media screen and (min-width: 480px) {
         position: absolute;
-            background-color: rgba(156, 190, 143, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(156, 190, 143, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -205,8 +210,8 @@
         //tablet screen
         @media screen and (min-width: 768px) {
             position: absolute;
-            background-color: rgba(156, 190, 143, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(156, 190, 143, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -215,8 +220,8 @@
         //desctop screen
         @media screen and (min-width: 1200px) {
             position: absolute;
-            background-color: rgba(156, 190, 143, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(156, 190, 143, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 302px;
             height: 302px;
@@ -226,8 +231,10 @@
 
 .products__item-fon-coffe {
     position: absolute;
-    background-color: rgba(248, 210, 78, 0.7);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    // background-color: rgba(248, 210, 78, 0.7);
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -236,8 +243,8 @@
     //phone screen
     @media screen and (min-width: 480px) {
         position: absolute;
-            background-color: rgba(248, 210, 78, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(248, 210, 78, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -246,8 +253,8 @@
         //tablet screen
         @media screen and (min-width: 768px) {
             position: absolute;
-            background-color: rgba(248, 210, 78, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(248, 210, 78, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -256,8 +263,8 @@
         //desctop screen
         @media screen and (min-width: 1200px) {
             position: absolute;
-            background-color: rgba(248, 210, 78, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(248, 210, 78, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 302px;
             height: 302px;
@@ -266,8 +273,10 @@
 }
 .products__item-fon-milk {
     position: absolute;
-    background-color: rgba(213, 117, 63, 0.7);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    // background-color: rgba(213, 117, 63, 0.7);
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -275,8 +284,8 @@
       //phone screen
       @media screen and (min-width: 480px) {
         position: absolute;
-            background-color: rgba(213, 117, 63, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(213, 117, 63, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -285,8 +294,8 @@
         //tablet screen
         @media screen and (min-width: 768px) {
             position: absolute;
-            background-color: rgba(213, 117, 63, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(213, 117, 63, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -295,8 +304,8 @@
         //desctop screen
         @media screen and (min-width: 1200px) {
             position: absolute;
-            background-color: rgba(213, 117, 63, 0.7);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            // background-color: rgba(213, 117, 63, 0.7);
+            // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             width: 302px;
             height: 302px;
@@ -394,11 +403,19 @@
 }
 .products__headlines {
     display: block;
-    margin-top: 58px;
-    margin-bottom: 120px;
+    // прибрати марджін топ
+    // margin-top: 58px;
+    // margin-bottom: 120px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
    justify-content: center;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 70px;
+        }
+                @media screen and (min-width: 1200px) {
+                    margin-bottom: 110px;
+                }
 }
 .products__title-main {
     font-family: 'Seymour One';
