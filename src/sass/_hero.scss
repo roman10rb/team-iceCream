@@ -53,15 +53,70 @@ img {
 
 .hero--overlay {
   max-width: 1200px;
-  height: 599px;
+  min-height: 599px;
   margin: 0 auto;
-  
-  background-image: url(../images/img-hero/png/point-line.png), 
-  url(../images/img-hero/png/hero-plate-icecream.png);
+    
+  @media screen and (max-width: 680px) {
+    background-size: contain, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
+    max-width: 320px;
+    min-height: 502px;
+  }
 
-  background-size: contain, auto;
-  background-repeat: no-repeat;
-  background-position: bottom, left 16px bottom 67px;
+  @media screen and (min-width: 681px) and (max-width: 1199px) {
+    background-size: contain, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, left 32px bottom 12px;
+    max-width: 768px;
+    min-height: 415px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    background-size: contain, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, left 16px bottom 67px;
+  }
+}
+
+.hero--overlay {
+    background-image: url("../images/img-hero/png/mobile-point-line.png"),
+    url("../images/img-hero/png/mobile-smile-icecream.png");
+}
+
+@media (min-resolution: 2dppx) {
+  .hero--overlay {
+    background-image: url("../images/img-hero/png/mobile-point-line-2x.png"),
+    url("../images/img-hero/png/mobile-smile-icecream-2x.png");
+    }
+}
+
+@media (min-width: 681px) {
+  .hero--overlay {
+    background-image: url("../images/img-hero/png/tablet-point-line.png"),
+      url("../images/img-hero/png/tablet-hero-plate-icecream.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero--overlay {
+      background-image: url("../images/img-hero/png/tablet-point-line-2x.png"),
+        url("../images/img-hero/png/tablet-hero-plate-icecream-2x.png");
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero--overlay {
+    background-image: url("../images/img-hero/png/point-line.png"),
+      url("../images/img-hero/png/hero-plate-icecream.png");
+  }
+    
+  @media (min-resolution: 2dppx) {
+    .hero--overlay {
+      background-image: url("../images/img-hero/png/point-line-2x.png"),
+        url("../images/img-hero/png/hero-plate-icecream-2x.png");
+    }
+  }
 }
 
 .container {
@@ -169,10 +224,18 @@ img {
   margin-left: 257px;
 
   width: 200px;
-}
 
-.features-wrap__link {
-  width: 100%;
+  @media screen and (max-width: 680px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 681px) {
+    margin-top: 46px;
+    margin-left: 216px;
+    
+    width: 139px;
+    
+  }
 }
 
 .overlay-wrap {
@@ -203,10 +266,6 @@ img {
   transform: translateY(100%);
 }
 
-.features-wrap__link:hover .hero-features__overlay {
-  transform: translateY(0);
-}
-
 .hero-features__text {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -214,8 +273,20 @@ img {
   font-size: 14px;
   line-height: 140%;
   /* or 20px */
-  
+
   color: #FCFCFC;
+}
+
+.features-wrap__link {
+  width: 100%;
+}
+
+.features-wrap__link:hover .hero-features__overlay {
+  transform: translateY(0);
+}
+
+.features-wrap__link:focus .hero-features__overlay {
+  transform: translateY(0);
 }
 
 .hero__right-wrap {
@@ -223,6 +294,10 @@ img {
   outline-offset: -2px;
 
   display: flex;
+
+  @media screen and (max-width: 680px) {
+    display: none;
+  }
 }
 
 .image-wrap {
@@ -230,6 +305,27 @@ img {
   outline-offset: -2px;
 
   margin-top: 39px;
+
+  @media screen and (min-width: 681px) and (max-width: 1199px) {
+    margin-top: 86px;
+  }
+}
+
+.hero-main__image {
+  @media screen and (max-width: 680px) {
+    width: 177px;
+    height: 217px;
+  }
+  
+  @media screen and (min-width: 681px) {
+    width: 268px;
+    height: 329px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 456px;
+    height: 560px;
+  }
 }
 
 .hero-service__item-cafes {
