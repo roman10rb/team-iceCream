@@ -17,7 +17,13 @@ new Swiper('.container-slider',{
       loop: true,
       slidesPerView: 1,
     // Effect
-      effect: 'slider',
+      effect: 'flip',
+
+      flipEffect:{
+        slideShadows: true,
+        
+        limitRotation: true
+      },
 
       keyboard: {
         // Enable
