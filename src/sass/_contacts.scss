@@ -551,38 +551,51 @@ align-items: center;
     border: none;
     padding: 11px 16px;
   }
+
   .map {
     position: relative;
     display: table-cell;
     // width: 448px;
     // height: 260px;
-    // background-image: url(../images/Poltava720.jpg);
-    background-repeat: no-repeat;
+
+    @media screen and (max-width: 767px){
+    // background-image: url(../images/contacts/map.jpg);
+    // background-repeat: no-repeat;
     border-radius: 10px;
     cursor: pointer;
-  }
+  }}
+
   .map-active {
     position: absolute;
     width: 100%;
     height: 100%;
   }
+
+.modal-phone{
+  @media screen and (max-width: 768px) {
+    height: 365px; 
+
+}}
+
   @media screen and (max-width: 767.99px) {
     .modal {
     width: 280px;
+    // height: 365px;
     padding: 26px 27px;
     }
     .modal-form {
       margin-left: 0;
       margin-right: 0;
     }
+
     .icon-cloce-black {
       width: 20px;
       height: 20px;
     }
     .modal-heading {
       width: 166px;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
       font-size: 16px;
       line-height: 1.5;
       padding: 0 0 20px 0;
