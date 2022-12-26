@@ -8,6 +8,8 @@
         </svg>
       </a>
 
+      
+      <div class="site-nav__left-box">
       <button
         class="site-nav__btn js-open-menu"
         type="button"
@@ -22,6 +24,12 @@
           <use href="./images/iconsSprite.svg#icon-menu-burger"></use>
         </svg>
       </button>
+
+      <button data-modal2-open type="button" class="mobile-menu__btn-modal2"> <p class="mobile-menu__btn-text">Buy now</p> <svg class="mobile-menu__btn-icon" class="" width="12" height="12">
+              <use href="./images/iconsSprite.svg#icon-arrow-button"></use>
+            </svg> </button>
+         </div> 
+
       
       
          <!--Mobile menu-->
@@ -163,19 +171,21 @@
 </header>
 
 <!--Модалка -->
- <div class="backdrop is-hidden " data-modal>
+ <div class="backdrop2 is-hidden2 " data-modal2>
                     <div class="modal">
-                        <button class="modal-btn" data-modal-close>
-                            <svg class="modal-icon" width="18" height="18">
+                        <button class="modal-btn" data-modal2-close>
+                            <svg class="modal-icon" width="20" height="20">
                               <use href="./images/iconsSprite.svg#icon-close-white"></use>
                             </svg>
                         </button>
-                        <strong class="modal-label">Buy now</strong>
-                        <div class="modal-menu">
-                            <div class="modal_ice-creem">
-                                <div class="modal_ice-creem-circle">
+                        <strong class="modal__label">Buy now</strong>
+                        
+                            <ul class="modal__product-list">
+                              <li class="modal__product-item modal__product-item--green">
+                                
+                                <div class="modal__box-circle modal__box-circle--green">
                                     <img
-                                        class="menu-avatar"
+                                        class="modal__image"
                                         srcset="./images/products/1_md@1x.jpg 1x, ./images/products/1_md@2x.jpg 2x"
                                         src="./images/products/1_md@1x.jpg"
                                         alt="ice-creem"
@@ -183,14 +193,16 @@
                                         height="132"
                                         loading="lazy"
                                         />
-                                </div>
-                                <p class="modal_ice-creem-text">ice cream</p>
-                            </div>
-                            <div class="modal-sweets">
-                                    <div class="modal_ice-coffee">
-                                    <div class="modal_ice-coffee-circle">
-                                    <img
-                                            class="menu-avatar"
+                                        <p class="modal__product-text">ice cream</p>
+                               
+                                     </div>
+                                
+                                   </li>
+
+                            <li class="modal__product-item modal__product-item--yellow"> 
+                            <div class="modal__box-circle modal__box-circle--yellow">
+                                        <img
+                                            class="modal__image"
                                             srcset="./images/products/2_md@1x.jpg 1x, ./images/products/2_md@2x.jpg 2x"
                                             src="./images/products/2_md@1x.jpg"
                                             alt="ice-creem"
@@ -198,15 +210,14 @@
                                             height="132"
                                             loading="lazy"
                                             />
-                                    </div>
-                                    <p class="modal_ice-coffee-text">ice coffee</p>
+                                    <p class="modal__product-text">ice coffee</p>
                                 </div>
-                            </div>
-                            <div class="modal-sweets">
-                                    <div class="modal_milkshake">
-                                    <div class="modal_milkshake-circle">
+                          </li>
+
+                          <li class="modal__product-item modal__product-item--pink"> 
+                           <div class="modal__box-circle modal__box-circle--pink">
                                         <img
-                                            class="menu-avatar"
+                                            class="modal__image"
                                             srcset="./images/products/3_md@1x.jpg 1x, ./images/products/3_md@2x.jpg 2x"
                                             src="./images/products/3_md@1x.jpg"
                                             alt="ice-creem"
@@ -214,16 +225,15 @@
                                             height="132"
                                             loading="lazy"
                                             />
-                                    </div>
-                                    <p class="modal_ice-milkshake-text">milkshake</p>
-                                </div>
+                                    <p class="modal__product-text">milkshake</p>
                             </div>
-                            </div>
-                        <form class="modal-form" name="modal_form">
-                          <div class="modal-form-group" role="group">
-                                <div class="modal-form-wrapper">
+                            </li>
+                            
+                          </ul>
+                        <form class="modal__form" name="modal__form">
+                          <div class="modal__form-group" role="group">
                                     <input
-                                        class="modal-form-field"
+                                        class="modal__input"
                                         type="text"
                                         name="user_name"
                                         id="user_name"
@@ -231,9 +241,8 @@
                                         required
                                         placeholder="Name"
                                     />
-                                </div>
-                                <div class="modal-form-wrapper">
-                                    <input class="modal-form-field" 
+                              
+                                    <input class="modal__input" 
                                         type="tel" 
                                         name="user_phone"
                                             id="user_phone" 
@@ -241,16 +250,16 @@
                                             required
                                             placeholder="Phone"
                                     />
-                                </div>
+                               
                                 <textarea
-                                class="modal-form-message"
+                                class="modal__textarea"
                                 name="user_message"
                                 id="user_message"
                                 rows="6"
                                 placeholder="Comment"
                                 ></textarea>
                           </div>
-                          <button class="modal-form-btn button" type="submit">Submit</button>
+                          <button class="modal__btn" type="submit">Submit</button>
                         </form>
                       </div>
                     </div>
@@ -260,4 +269,6 @@
 
 <script defer src="js/mobile-menu.js"></script>
 <script defer src="js/modal-mobile-menu.js"></script>
+<script defer src="js/modal-mobile-menu2.js"></script>
+
 

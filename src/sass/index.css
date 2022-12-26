@@ -21,6 +21,12 @@
           align-items: center;
 }
 
+.site-nav__left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-nav {
   position: relative;
   margin-bottom: 51px;
@@ -55,6 +61,44 @@
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__btn-modal2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn-modal2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f8d24e;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #000000;
+    padding: 12px 36px;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 32px;
+  }
+  .mobile-menu__btn-modal2:hover {
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  .mobile-menu__btn-modal2:focus {
+    color: #fcfcfc;
+    background-color: #0a8817;
+    border-color: #0a8817;
+  }
+  .mobile-menu__btn-modal2:disabled {
+    background-color: rgb(171, 171, 171);
+    border-color: rgb(171, 171, 171);
+  }
 }
 
 .menu-toggle {
@@ -294,6 +338,13 @@
   line-height: 1.5;
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .modal__label {
+    margin-bottom: 103px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 
 .modal__product-list {
   display: -webkit-box;
@@ -307,6 +358,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .modal__product-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .modal__product-item {
   background-color: #fcfcfc;
@@ -318,9 +377,20 @@
 .modal__product-item:not(:last-child) {
   margin-bottom: 84px;
 }
+@media screen and (min-width: 768px) {
+  .modal__product-item:not(:last-child) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
 
 .modal__product-item:last-child {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .modal__product-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .modal__product-item--green {
@@ -494,32 +564,31 @@
   border-color: rgb(171, 171, 171);
 }
 
-.backdrop.is-hidden {
+.backdrop2.is-hidden2 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  background-color: #fcfcfc;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
-  padding: 40px;
+  padding: 32px 54px;
   background-color: #fcfcfc;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform var(--animation);
-  transition: -webkit-transform var(--animation);
-  transition: transform var(--animation);
-  transition: transform var(--animation), -webkit-transform var(--animation);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop2.is-hidden2 .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
@@ -2568,7 +2637,7 @@ img {
 }
 .section-about__container .section-about,
 .container .section-about {
-  background: #84A178;
+  background: #84a178;
   padding-bottom: 25px;
 }
 .section-about__container .section-about__item,
