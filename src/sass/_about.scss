@@ -216,6 +216,19 @@ color: #FCFCFC;
     
     
 }
+.section-about__button:hover{
+  background: #0A8817;
+}
+.section-about__button:focus{
+  background: #0A8817;
+ color: #FCFCFC;
+}
+.section-about__button:disabled{
+  background: #ABABAB;
+ color: #FCFCFC;
+}
+
+
 .section-about__button{
     background: #F8D24E;
 border-radius: 10px;
@@ -228,7 +241,7 @@ font-weight: 600;
 line-height: 1.28;
 letter-spacing: 0em;
 text-align: center;
-
+transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
 }
 .modal{
