@@ -136,7 +136,7 @@
       </li>
     </ul>
     <div class="contacts__btns">
-      <button type="button" class="reviews__button">
+      <button type="button" class="reviews__button" data-modal-open5>
         Our Locations
         <svg class="button-icon" width="12" height="12">
           <use href="./images/iconsSprite.svg#icon-arrow-button"></use>
@@ -148,7 +148,7 @@
           <use href="./images/iconsSprite.svg#icon-arrow-button"></use>
         </svg>
       </button> -->
-      <button type="button" class="reviews__button-agreement">
+      <button type="button" class="reviews__button-agreement" data-modal-open6>
         Franchise
         <svg class="button-icon" width="12" height="12">
           <use href="./images/iconsSprite.svg#icon-arrow-button"></use>
@@ -163,3 +163,74 @@
     </div>
   </div>
 </section> 
+
+
+    <!-- Модалка мапа Полтави -->
+    <div class="backdrop is-hidden" data-modal5>
+      <div class="modal">
+          <button type="button" class="modal__btn" data-modal-close>
+          <svg class="icon-cloce-black" width="24" height="24">
+          <use href="./images/iconsSprite.svg#icon-cloce-black"></use>
+          </svg>
+          </button>
+          <h1 class="modal-heading">Our Locations</h1>
+          <div class="map">
+              <a class="map-active" href="https://goo.gl/maps/XzLzhx87Stx5TUyM9">
+              </a>
+          </div>
+          <button class="button-modal-submit" type="submit" onClick="location.href='https://goo.gl/maps/XzLzhx87Stx5TUyM9'">Open map</button>
+      </div>
+  </div>
+  <!-- Модалка франшиза -->
+  <div class="backdrop is-hidden" data-modal6>
+      <div class="modal">
+          <button type="button" class="modal__btn" data-modal-close>
+          <svg class="icon-cloce-black">
+          <use href="./images/iconsSprite.svg#icon-cloce-black"></use>
+          </svg>
+          </button>
+          <h1 class="modal-heading-franchise">Thank you for your interest in owning an Ice Cream shop</h1>
+          <div class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</div>
+      <form class="modal-form">
+          <div class="form__field">
+              <input
+              class="modal__input"
+              type="text"
+              name="name-field"
+              id="name"
+              placeholder="Name"
+              />
+          </div>
+          <div class="form__field">
+              <input
+              class="modal__input"
+              type="text"
+              name="name-field"
+              id="phone"
+              placeholder="Phone"
+              />
+          </div>
+          <div class="form__field">
+              <input
+              class="modal__input"
+              type="text"
+              name="name-field"
+              id="email"
+              placeholder="Email"
+              />
+          </div>
+          <div class="modal__textarea">
+              <textarea
+                class="modal__form-message"
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Comment"
+                ></textarea>
+          </div> 
+          <button class="button-modal-submit" type="submit">Submit</button>
+          </form>
+      </div>
+      </div>
+
+      <script src="./js/contacts.js"></script>
