@@ -624,7 +624,7 @@
   border-color: rgb(171, 171, 171);
 }
 
-.backdrop2.is-hidden2 {
+.backdrop2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -639,6 +639,13 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
+}
+.backdrop2.is-hidden2 {
+  -webkit-transform: opacity;
+          transform: opacity;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {

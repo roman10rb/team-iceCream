@@ -486,7 +486,7 @@
 
 // Модалка друга
 
-.backdrop2.is-hidden2 {
+.backdrop2{
   position: absolute;
   top: 0;
   left: 0;
@@ -498,6 +498,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
+
+  &.is-hidden2 {
+    transform: opacity;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+  }
 }
 
 .modal {
@@ -514,10 +521,6 @@
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&.is-hidden .modal {
-  transform: translate(-50%, -50px) scale(0.5);
 }
 
 .backdrop2.is-hidden2 .modal {
