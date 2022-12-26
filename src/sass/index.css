@@ -2,10 +2,23 @@
   text-decoration: none;
 }
 
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12px;
+}
+
 .site-nav__btn {
+  display: block;
   border: none;
-  padding: 10px 0;
-  margin-right: 0 auto;
+  fill: #ffffff;
 }
 .site-nav__btn:hover .site-nav__btn__svg, .site-nav__btn:focus .site-nav__btn__svg {
   color: var(--effects-color);
