@@ -109,7 +109,7 @@
   fill: #84a178;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__socials__item:hover .footer__socials__link,
