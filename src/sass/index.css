@@ -3,11 +3,13 @@
   background-color: #84a178;
 }
 
-.site-nav__logo {
+.site-nav__logo,
+.menu-nav__logo {
   text-decoration: none;
 }
 
-.site-nav {
+.site-nav,
+.menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +19,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
 }
 
 .site-nav__btn {
@@ -41,7 +42,7 @@
   }
 }
 
-site-nav__svg {
+.site-nav__svg {
   fill: currentColor;
   -webkit-transition-property: color;
   transition-property: color;
