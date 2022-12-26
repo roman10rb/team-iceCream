@@ -15,16 +15,19 @@
   align-items: center;
   @media screen and(min-width:1200px) {
     justify-content: flex-start;
+    align-items: baseline;
   }
 }
 
-.mobile-menu-desktop{
+.mobile-menu-desktop {
   display: none;
 }
 
 @media screen and(min-width:1200px) {
-  .mobile-menu-desktop{
+  .mobile-menu-desktop {
     display: flex;
+    padding-left: 308px;
+    padding-right: 204px;
   }
 }
 
