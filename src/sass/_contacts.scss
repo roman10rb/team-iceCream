@@ -552,28 +552,19 @@ align-items: center;
     padding: 11px 16px;
   }
 
-  .map {
-    position: relative;
-    display: table-cell;
-    // width: 448px;
-    // height: 260px;
-
-    @media screen and (max-width: 767px){
-    // background-image: url(../images/contacts/map.jpg);
-    // background-repeat: no-repeat;
-    border-radius: 10px;
-    cursor: pointer;
-  }}
-
   .map-active {
     position: absolute;
     width: 100%;
     height: 100%;
   }
 
-.modal-phone{
-  @media screen and (max-width: 768px) {
-    height: 365px; 
+  .modal-maps{
+width: 224px;
+height: 199px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
 
 }}
 
@@ -583,6 +574,7 @@ align-items: center;
     // height: 365px;
     padding: 26px 27px;
     }
+
     .modal-form {
       margin-left: 0;
       margin-right: 0;
@@ -645,12 +637,16 @@ align-items: center;
     }
     .map {
       margin-bottom: 24px;
-      width: 224px;
-      height: 199px;
-      // background-image: url(../images/Poltava480.jpg);
-      background-repeat: no-repeat;
       border-radius: 10px;
+      cursor: pointer;
+      width: 280px;
+      height: 365px;
+      @media screen and (min-width: 768px) {
+        width: 568px;
+        height: 458px;}
+
     }
+
     .button-modal-submit{
       font-family: 'Montserrat';
       font-size: 12px;
