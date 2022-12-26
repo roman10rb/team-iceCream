@@ -1,0 +1,2 @@
+new Swiper(".image-slider",{slidesPerView:1,autoplay:{delay:4e3,disableOnInteraction:!1},speed:2e3,loop:!0,effect:"cube",cubeEffect:{shadow:!1}}),new Swiper(".container-slider",{pagination:{el:".swiper-pagination",clickable:!0},centeredSlides:!0,slideToClickedSlide:!0,loop:!0,slidesPerView:1,effect:"slide",flipEffect:{slideShadows:!0,limitRotation:!0},keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0}});
+//# sourceMappingURL=index.63fafe91.js.map
