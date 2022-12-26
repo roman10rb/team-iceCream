@@ -7,6 +7,7 @@
           <use href="./images/iconsSprite.svg#icon-logo"></use>
         </svg>
       </a>
+
       <button
         class="site-nav__btn js-open-menu"
         type="button"
@@ -17,11 +18,12 @@
           class="site-nav__svg"
           width="32"
           height="32"
-          aria-label="перемикач мобільного меню"
-        >
+          aria-label="перемикач мобільного меню">
           <use href="./images/iconsSprite.svg#icon-menu-burger"></use>
         </svg>
       </button>
+      
+      
          <!--Mobile menu-->
       <div class="menu-container js-menu-container" id="menu-container">
         <nav class="menu-nav">
@@ -29,25 +31,27 @@
         <svg class="menu-nav__logo-icon" width="48" height="44">
           <use href="./images/iconsSprite.svg#icon-logo"></use>
         </svg>
-      </a>
+       </a>
 						<button class="menu-toggle js-close-menu">
 							<svg class="menu-toggle__icon-close" width="32" height="32">
 								<use href="./images/iconsSprite.svg#icon-close-white">
 							</svg>
-						</button>
-</nav>
+						</button>         
+           </nav>
 
 						<ul class="mobile-menu">
 							<li class="mobile-menu__item">
-								<a class="mobile-menu__link mobile-menu__link--current" href="./about.html">Home</a>
+								<a class="mobile-menu__link mobile-menu__link--current" href="">Home</a>
 							</li>
-							<li class="mobile-menu__item"><a class="mobile-menu__link" href="./example.html">How it’s made?</a></li>
-							<li class="mobile-menu__item"><a class="mobile-menu__link" href="./products.html">Our products</a></li>
-              <li class="mobile-menu__item"><a class="mobile-menu__link" href="./contacts.html">Contact</a></li>
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="">How it’s made?</a></li>
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="">Our products</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Contact</a></li>
 						</ul>
 
-						<button data-modal1-open type="button" class="banner__btn">Замовити послугу</button>
-
+						<button data-modal1-open type="button" class="mobile-menu__btn-modal"> <p class="mobile-menu__btn-text">Buy now</p> <svg class="" width="12" height="12">
+              <use href="./images/iconsSprite.svg#icon-arrow-button"></use>
+            </svg> </button>
+      </div>
 						
     </nav>
 
@@ -57,3 +61,5 @@
 
   </div>
 </header>
+
+<script defer src="js/mobile-menu.js"></script>
