@@ -1,43 +1,75 @@
 :root {
   --swiper-theme-color: #84A178;
 }
-.container {
-  width: 1200px;
+
+.review {
+  position: relative;
+  background-repeat: repeat;
+  background-image: url(../images/backdropdesktop@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+// .container-swiper {
+//   width: 1200px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+  
+//   @media screen and (max-width: 767px) {
+//     width: 480px;
+//   }
+  
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: 768px;
+//   }
+
+// }
+.container-swiper {
+padding-right: 20px;
   padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  
-  
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: auto;
+  margin-left: auto;
+  // phone screen
+  @media screen and (min-width: 480px) {
+    width: 320px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
     width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
-
-  @media screen and (max-width: 768px) {
-    width: 480px;
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
-
 }
 
 .container-slider {
   box-sizing: border-box;
   position: relative;
-  width: 1013px;
+  max-width: 480px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 705px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 705px;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 480px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1013px;
   }
 }
 
 .customer-review {
-  width: 968px;
+  // width: 968px;
   align-items: center;
   padding-left: auto;
   padding-right: auto;
@@ -50,6 +82,7 @@
 }
 
 .reviewer-photo {
+  
   width: 85px;
   height: 85px;
   margin-left: auto;
@@ -58,22 +91,22 @@
 }
 
 
-.review-text {
-  width: 923px;
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.88;
-text-align: center;
-letter-spacing: 0.04em;
-color: #FCFCFC;
-background-color: #84A178;
-border-radius: 24px;
-padding: 39px 74px;
-margin: 0 auto;
-margin-bottom: 32px;
-}
+// .review-text {
+//   width: 923px;
+//   font-family: 'Montserrat';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 1.88;
+// text-align: center;
+// letter-spacing: 0.04em;
+// color: #FCFCFC;
+// background-color: #84A178;
+// border-radius: 24px;
+// padding: 39px 74px;
+// margin: 0 auto;
+// margin-bottom: 32px;
+// }
 
 .reviewer-name {
   font-family: 'Montserrat';
@@ -100,14 +133,10 @@ margin-bottom: 32px;
 
 .swiper-pagination {
   margin-top: 20px;
-  // color: #84A178;
 }
 
 .customer-reviews {
-  background-repeat: repeat;
-  background-image: url(../images/backdropdesktop@1x.jpg);
-  background-position: center;
-  padding-bottom: 100px;
+  padding-bottom: 228px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 80px;
@@ -129,22 +158,22 @@ margin-bottom: 32px;
     align-items: center;
   }
   
-  .review-text {
-  width: 705px;
-  height: 138px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.85;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FCFCFC;
-  background-color: #84A178;
-  border-radius: 24px;
-  padding: 28px 80px;
-  margin: 0 auto;
-  margin-bottom: 32px;
-  }
+  // .review-text {
+  // width: 705px;
+  // height: 138px;
+  // font-style: normal;
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.85;
+  // text-align: center;
+  // letter-spacing: 0.04em;
+  // color: #FCFCFC;
+  // background-color: #84A178;
+  // border-radius: 24px;
+  // padding: 28px 80px;
+  // margin: 0 auto;
+  // margin-bottom: 32px;
+  // }
 }
 
 @media screen and (max-width: 767px) {
@@ -153,22 +182,7 @@ margin-bottom: 32px;
     align-items: center;
   }
   
-  .review-text {
-  width: 280px;
-  height: 256px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.58;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FCFCFC;
-  background-color: #84A178;
-  border-radius: 24px;
-  padding: 35px 39px;
-  margin: 0 auto;
-  margin-bottom: 32px;
-  }
+  
   
   .reviewer-name {
     font-family: 'Montserrat';
@@ -179,3 +193,86 @@ margin-bottom: 32px;
 }
 
 
+// .review-text {
+//   width: 280px;
+//   height: 256px;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 2.58;
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   color: #FCFCFC;
+//   background-color: #84A178;
+//   border-radius: 24px;
+//   padding: 35px 39px;
+//   margin: 0 auto;
+//   margin-bottom: 32px;
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     .review-text {
+//       width: 705px;
+//       height: 138px;
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 14px;
+//       line-height: 1.85;
+//       text-align: center;
+//       letter-spacing: 0.04em;
+//       color: #FCFCFC;
+//       background-color: #84A178;
+//       border-radius: 24px;
+//       padding: 28px 80px;
+//       margin: 0 auto;
+//       margin-bottom: 32px;
+//       }
+//   }
+
+//   @media screen and (max-width: 1200px) {
+//   .review-text {
+//     width: 923px;
+//     font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   color: #FCFCFC;
+//   background-color: #84A178;
+//   border-radius: 24px;
+//   padding: 39px 74px;
+//   margin: 0 auto;
+//   margin-bottom: 32px;
+//   }
+
+//   }
+// }
+
+.review-text {
+  font-family: 'Montserrat';
+  // font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FCFCFC;
+  background-color: #84A178;
+  padding: 35px 39px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  padding: 28px 80px;
+  border-radius: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  font-size: 16px;
+  padding: 39px 74px;
+  border-radius: 24px;
+  }
+}

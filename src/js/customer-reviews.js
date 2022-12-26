@@ -30,7 +30,7 @@ new Swiper('.container-slider',{
         enabled: true,
         onlyInViewport: true,
         pageUpDown: true,
-      }
+      },
     
 }
 
