@@ -29,16 +29,6 @@ img {
 
 /* Розділ базових налаштвань (тимчасовий) */
 
-.hero__left-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.hero-service__wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
 /* позиціонування елементів */
 
 .hero {
@@ -117,9 +107,6 @@ img {
 }
 
 .container {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   display: flex;
   justify-content: space-between;
 
@@ -137,9 +124,6 @@ img {
 }
 
 .hero__title {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   font-family: Seymour One, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -239,7 +223,6 @@ img {
       font-size: 12px;
     }
   }
-
 }
 
 .guide-wrap__link {
@@ -300,9 +283,6 @@ img {
   }
 
 .features-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   margin-top: 111px;
   margin-left: 257px;
 
@@ -321,9 +301,6 @@ img {
 }
 
 .overlay-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   align-self: flex-end;
 
   position: relative;
@@ -336,9 +313,6 @@ img {
 }
 
 .hero-features__icon {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   margin-top: 24px;
 
   @media screen and (min-width: 681px) and (max-width: 1199px) {
@@ -390,9 +364,6 @@ img {
 }
 
 .hero__right-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   display: flex;
 
   @media screen and (max-width: 680px) {
@@ -401,9 +372,6 @@ img {
 }
 
 .image-wrap {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   margin-top: 39px;
 
   @media screen and (min-width: 681px) and (max-width: 1199px) {
@@ -429,9 +397,6 @@ img {
 }
 
 .hero-service__item-cafes {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   margin-top: 53px;
   margin-left: 24px;
 
@@ -442,10 +407,7 @@ img {
 }
 
 .hero-service__item-trucks {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
-  margin-top: 16px;
+ margin-top: 16px;
 
   text-align: right;
 
