@@ -1,0 +1,165 @@
+<section class="products">
+    <div class="products__container">
+        <div class="products__headlines">
+            <p class="products__title">100% natural</p>
+            <h2 class="products__title-main">products</h2>
+        </div>
+        <div class="products__type">
+            <ul class="products__group">
+                    <li class="products__list products__item">
+                <div class="products__fon-ice-cream">
+                    <div class="products__item-fon">
+                        <div class="products__picture">
+                            <div class="products__item-picture">
+                                <img class="products__item-img"
+                                src="./images/desktopicecream@1x.jpg" alt="Морозиво" radius="50%" width="302" height="302">
+                        </div>
+                    </div>
+                </div>
+                        <h3 class="products__item-title">ice cream</h3>
+                        <p class="products__item-describe">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
+                        </p>
+                        <button data-modal-open1>
+                        <svg class="products__item-svg" width="40" height="16">
+                            <use href="./images/iconsSprite.svg#icon-arrow-hero"></use>
+                        </svg>
+                       </button>
+                </div>
+                </li>
+                <li class="products__list products__item"> 
+                    <div class="products__fon-ice-coffe">
+                            <div class="products__item-fon-coffe">
+                                <div class="products__picture">
+                                    <div class="products__item-picture">
+                                        <img class="products__item-img"
+                                        src="./images/desktopicecoffe@1x.jpg" alt="Холодна кава" radius="50%" width="302" height="302">
+                            </div>
+                                </div>
+                                </div>
+                            <h3 class="products__item-title">ice coffee</h3>
+                            <p class="products__item-describe">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
+                            </p>
+                            <button data-modal-open2>
+                            <svg class="products__item-svg" width="40" height="16">
+                                <use href="./images/iconsSprite.svg#icon-arrow-hero"></use>
+                            </svg>
+                        </button>
+                </div>
+                </li>
+                <li class="products__list products__item">  
+                    <div class="products__fon-milk-shake">
+                        <div class="products__item-fon-milk">
+                            <div class="products__picture">
+                            <div class="products__item-picture">
+                                <img class="products__item-img"
+                                src="./images/milkshake1x.jpg" alt="Молочний коктейль" radius="50%"  width="302" height="302">
+                    </div>
+                </div>
+            </div>
+                    <h3 class="products__item-title">milkshakes</h3>
+                    <p class="products__item-describe">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice
+                    </p>
+                    <button type="button" data-modal-open3>
+                    <svg class="products__item-svg" width="40" height="16">
+                        <use href="./images/iconsSprite.svg#icon-arrow-hero"></use>
+                    </svg>
+                </button>
+                </div>
+                </li>
+            </ul>
+        </div>
+        
+<!--Modal-->
+<div class="backdrop is-hidden"  data-modal1>
+    <div class="modal__products">
+    <button type="button" class="modal__products-button" data-modal-close1><svg width="13" height="13">
+        <use href="./images/iconsSprite.svg#icon-clarity_close-line" ></use>
+    </svg></button>
+    <h2 class="modal__products-name">Chololate icecream</h2>
+        <div class="modal__products-fon">
+            <div class="modal__products-fon-position">
+            <div class="modal__products-picture">
+                <picture>
+                    <source media="(min-width: 320px )" srcset="./images/modal-products/Ellipse67_l@1x.jpg 1x, ./images/modal-products/Ellipse67_l@1x.jpg 2x">
+                    <img class="products__item-img"
+                src="./images/modal-products/Ellipse67_l@1x.jpg" alt="Морозиво"  width="132" height="132">
+            </picture>
+    </div>
+</div>
+</div>
+    <ul class="modal__products-components">
+        <li class="products__list">
+            <div class="modal__products-border">
+                <div class="modal__products-border-fon">
+                    <p class="modal__products-border-contents">320</p>
+                </div>
+                <p class="modal__products-border-portion">kcal</p>
+            </div>
+        </li>
+        <li class="products__list">
+            <div class="modal__products-border">
+                <div class="modal__products-border-fon">
+                    <p class="modal__products-border-contents">4g</p>
+                        </div>
+                    <p class="modal__products-border-portion">Protein...</p>
+                </div>
+        </li>
+        <li class="products__list">
+            <div class="modal__products-border">
+                <div class="modal__products-border-fon">
+                    <p class="modal__products-border-contents">8,2g</p>
+                </div>
+                    <p class="modal__products-border-portion">Fats</p>
+            </div>
+        </li>
+        <li class="products__list">
+            <div class="modal__products-border">
+                <div class="modal__products-border-fon">
+                    <p class="modal__products-border-contents">40,4g</p>
+                    </div>
+                    <p class="modal__products-border-portion">Carbs</p>
+            </div>
+        </li>
+    </ul>
+    <div class="modal_products-recipe">
+        <h4 class="modal_products-recipe-title ">Ingredients</h4>
+    </div>
+    <div class="modal__products-ingredients">
+        <div class="modal__products-ingredients-substance">
+            <ul class="modal__products-ingredients-substance-group">
+                <li class="products__list modal__products-ingredients-substance-item">Milk</li>
+                <li class="products__list modal__products-ingredients-substance-item">Belgian chocolate</li>
+                <li class="products__list modal__products-ingredients-substance-item">Cream</li>
+                <li class="products__list modal__products-ingredients-substance-item">Cocoa powder</li>
+                <li class="products__list modal__products-ingredients-substance-item">Sugar</li>
+                <li class="products__list modal__products-ingredients-substance-item-last">Vanilla sugar</li>
+            </ul>
+        </div>
+        <div class="modal__products-ingredients-weight">
+            <ul class="modal__products-ingredients-weight-group">
+                <li class="products__list modal__products-ingredients-weight-item">100ml</li>
+                <li class="products__list modal__products-ingredients-weight-item">20g</li>
+                <li class="products__list modal__products-ingredients-weight-item">150 ml</li>
+                <li class="products__list modal__products-ingredients-weight-item">30g</li>
+                <li class="products__list modal__products-ingredients-weight-item">40g</li>
+                <li class="products__list modal__products-ingredients-weight-item-last">10g</li>
+            </ul>
+        </div>
+    </div>
+    <div class="products__div-label">
+        <label for="" class="products__modal-label" >
+            <input type="text" class="products__input" placeholder="Name">
+        </label>
+        <label for="" class="products__modal-label">
+            <input type="text" class="products__input" placeholder="Phone" >
+        </label>
+        <label for="" class="products__modal-label">
+            <textarea name="" id="" cols="30" rows="10" class="products__textarea" placeholder="Comment" ></textarea>
+        </label>
+        <button type="button" class="products__modal-button">Submit</button>
+    </div>
+    </div>
+</div> 
+</div>
+ <script src="./js/about-products.js"></script>
+</section>
