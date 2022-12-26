@@ -1,0 +1,28 @@
+.site-nav__logo {
+  text-decoration: none;
+}
+
+.site-nav__btn {
+  border: none;
+  padding: 10px 0;
+  margin-right: 0 auto;
+
+  &:hover &__svg,
+  &:focus &__svg {
+    color: var(--effects-color);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+site-nav__svg {
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+}
