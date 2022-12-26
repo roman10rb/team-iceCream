@@ -32,7 +32,7 @@ padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
   // phone screen
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 320px;
   }
   // tablet screen
@@ -82,31 +82,12 @@ padding-right: 20px;
 }
 
 .reviewer-photo {
-  
   width: 85px;
   height: 85px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
 }
-
-
-// .review-text {
-//   width: 923px;
-//   font-family: 'Montserrat';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 16px;
-// line-height: 1.88;
-// text-align: center;
-// letter-spacing: 0.04em;
-// color: #FCFCFC;
-// background-color: #84A178;
-// border-radius: 24px;
-// padding: 39px 74px;
-// margin: 0 auto;
-// margin-bottom: 32px;
-// }
 
 .reviewer-name {
   font-family: 'Montserrat';
@@ -158,22 +139,6 @@ padding-right: 20px;
     align-items: center;
   }
   
-  // .review-text {
-  // width: 705px;
-  // height: 138px;
-  // font-style: normal;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.85;
-  // text-align: center;
-  // letter-spacing: 0.04em;
-  // color: #FCFCFC;
-  // background-color: #84A178;
-  // border-radius: 24px;
-  // padding: 28px 80px;
-  // margin: 0 auto;
-  // margin-bottom: 32px;
-  // }
 }
 
 @media screen and (max-width: 767px) {
@@ -182,8 +147,6 @@ padding-right: 20px;
     align-items: center;
   }
   
-  
-  
   .reviewer-name {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -191,63 +154,6 @@ padding-right: 20px;
     margin-bottom: 12px;
   }
 }
-
-
-// .review-text {
-//   width: 280px;
-//   height: 256px;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 2.58;
-//   text-align: center;
-//   letter-spacing: 0.04em;
-//   color: #FCFCFC;
-//   background-color: #84A178;
-//   border-radius: 24px;
-//   padding: 35px 39px;
-//   margin: 0 auto;
-//   margin-bottom: 32px;
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     .review-text {
-//       width: 705px;
-//       height: 138px;
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 14px;
-//       line-height: 1.85;
-//       text-align: center;
-//       letter-spacing: 0.04em;
-//       color: #FCFCFC;
-//       background-color: #84A178;
-//       border-radius: 24px;
-//       padding: 28px 80px;
-//       margin: 0 auto;
-//       margin-bottom: 32px;
-//       }
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//   .review-text {
-//     width: 923px;
-//     font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.88;
-//   text-align: center;
-//   letter-spacing: 0.04em;
-//   color: #FCFCFC;
-//   background-color: #84A178;
-//   border-radius: 24px;
-//   padding: 39px 74px;
-//   margin: 0 auto;
-//   margin-bottom: 32px;
-//   }
-
-//   }
-// }
 
 .review-text {
   font-family: 'Montserrat';
@@ -261,6 +167,7 @@ padding-right: 20px;
   padding: 35px 39px;
   border-radius: 10px;
   margin-bottom: 32px;
+  min-width: 202px;
 
   @media screen and (min-width: 768px) {
   font-weight: 500;
