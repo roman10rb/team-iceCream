@@ -11,26 +11,29 @@ $breakpoints: (
 );
 .section-about__container,
 .container {
-  min-width: 320px;
-  padding: 0 20px;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 
   // tablet screen
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   // desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-
-.section-about{
-    background: #84A178;
-    padding-bottom: 25px;
 }
 
+.section-about {
+  background: #84a178;
+  padding-bottom: 50px;
+}
 
 .section-about__item {
   width: 220px;
@@ -190,6 +193,18 @@ $breakpoints: (
   margin-top: 10px;
   padding-bottom: 20px;
 }
+.section-about__button:hover {
+  background: #0a8817;
+}
+.section-about__button:focus {
+  background: #0a8817;
+  color: #fcfcfc;
+}
+.section-about__button:disabled {
+  background: #ababab;
+  color: #fcfcfc;
+}
+
 .section-about__button {
   background: #f8d24e;
   border-radius: 10px;
@@ -202,6 +217,9 @@ $breakpoints: (
   line-height: 1.28;
   letter-spacing: 0em;
   text-align: center;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 .modal {
   position: absolute;
@@ -278,5 +296,4 @@ $breakpoints: (
   @media screen and(min-width:768px) {
     font-size: 16px;
   }
-}
 }
