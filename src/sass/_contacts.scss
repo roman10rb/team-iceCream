@@ -1,7 +1,6 @@
 
 
 body {
-  background-color: #84a178;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -13,6 +12,33 @@ p {
 //   list-style: none;
 //   padding: 0;
 // }
+
+.contacts {
+  background-image: linear-gradient(to bottom,
+
+  rgba(132, 161, 120, 0)  353px,
+  rgba(132, 161, 120, 1)  353px,
+  rgba(132, 161, 120, 1)  100%
+  );
+  
+  @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to bottom,
+  
+      rgba(132, 161, 120, 0)  299px,
+      rgba(132, 161, 120, 1)  299px,
+      rgba(132, 161, 120, 1)  100%
+  );
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to bottom,
+  
+      rgba(132, 161, 120, 0)  128px,
+      rgba(132, 161, 120, 1)  128px,
+      rgba(132, 161, 120, 1)  100%
+  );
+    }
+}
 
 .link {
   text-decoration: none;

@@ -1,8 +1,19 @@
 body {
   padding-bottom: 20px;
-  background-color: rgba(132, 161, 120, 1);
+  // background-color: rgba(132, 161, 120, 1);
+  position: relative;
+  background-image: url(../images/backgroud_mobile.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment:fixed;
 
   @media screen and (min-width: 768px) {
+    background-image: url(../images/background_tablet.jpg);
+    padding-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/backdropdesktop@1x.jpg);
     padding-bottom: 12px;
   }
 }
