@@ -3515,37 +3515,44 @@ img {
   height: auto;
 }
 
-.section-about__container {
+.section-about__container,
+.container {
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .section-about__container {
+  .section-about__container,
+.container {
     width: 768px;
     padding: 0 32px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-about__container {
+  .section-about__container,
+.container {
     width: 1200px;
     padding: 0 16px;
   }
 }
-.section-about__container .section-about {
+.section-about__container .section-about,
+.container .section-about {
   background: #84a178;
   padding-bottom: 25px;
 }
-.section-about__container .section-about__item {
+.section-about__container .section-about__item,
+.container .section-about__item {
   width: 220px;
 }
 @media screen and (min-width: 768px) {
-  .section-about__container .section-about__item {
+  .section-about__container .section-about__item,
+.container .section-about__item {
     width: 334px;
     padding-left: 0;
   }
 }
-.section-about__container .section-about__div-title {
+.section-about__container .section-about__div-title,
+.container .section-about__div-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3561,7 +3568,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.section-about__container .section-about__h2-title {
+.section-about__container .section-about__h2-title,
+.container .section-about__h2-title {
   font-family: Seymour One;
   font-size: 30px;
   font-weight: 400;
@@ -3575,20 +3583,23 @@ img {
   color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
-  .section-about__container .section-about__h2-title {
+  .section-about__container .section-about__h2-title,
+.container .section-about__h2-title {
     width: 454px;
     font-size: 34px;
     line-height: 1.27;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-about__container .section-about__h2-title {
+  .section-about__container .section-about__h2-title,
+.container .section-about__h2-title {
     width: 481px;
     font-size: 36px;
     line-height: 1.27;
   }
 }
-.section-about__container .section-about__label {
+.section-about__container .section-about__label,
+.container .section-about__label {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
@@ -3598,14 +3609,16 @@ img {
   color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
-  .section-about__container .section-about__label {
+  .section-about__container .section-about__label,
+.container .section-about__label {
     font-weight: 800;
     font-size: 22px;
     line-height: 1.22;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-about__container .section-about__label {
+  .section-about__container .section-about__label,
+.container .section-about__label {
     font-weight: 800;
     font-size: 30px;
     line-height: 1.22;
