@@ -51,7 +51,7 @@ html {
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left 83px, bottom;
     max-width: 320px;
-    min-height: 502px;
+    min-height: 460px;
   }
 
   @media screen and (min-width: 681px) and (max-width: 1200px) {
@@ -59,16 +59,16 @@ html {
     background-repeat: no-repeat, no-repeat;
     background-position: left 32px bottom 12px, bottom;
     max-width: 768px;
-    min-height: 415px;
+    min-height: 355px;
   }
   
   @media screen and (min-width: 1200px) {
-    background-size: 225px 225px, contain;
+    background-size: 225px 225px, 1200px 383px;
     background-repeat: no-repeat, no-repeat;
-    background-position: left 16px bottom 67px, bottom;
+    background-position: left 16px bottom 64px, bottom;
 
     max-width: 1200px;
-    min-height: 599px;
+    min-height: 591px;
   }
 }
 
@@ -126,7 +126,11 @@ html {
   @media screen and (max-width: 680px) {
     display: block;
     min-width: 247px;
-    padding-top: 99px;
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 681px) and (max-width: 1199px) {
+    padding-top: 14px;
   }
 }
 
@@ -180,6 +184,10 @@ html {
 
 .guide-wrap {
   margin-top: 28px;
+
+  @media screen and (max-width: 680px) {
+    margin-top: 32px;
+  }
 }
 
 .guide-wrap__list {
@@ -190,6 +198,11 @@ html {
 .guide-wrap__item-btn {
   width: 134px;
   height: 42px;
+
+  @media screen and (max-width: 680px) {
+    width: 108px;
+    height: 38px;
+  }
 
   margin-right: 12px;
   border: 2px solid;
@@ -209,6 +222,11 @@ html {
     }
 
   .guide-wrap__link {
+
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0 12px 0;
+    
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -222,25 +240,6 @@ html {
     }
   }
 
-  @media screen and (max-width: 680px) {
-    width: 108px;
-    height: 38px;
-  }
-
-  @media screen and (min-width: 681px) and (max-width: 1199px) {
-    width: 108px;
-    height: 38px;
-
-    .guide-wrap__link {
-      font-size: 12px;
-    }
-  }
-}
-
-.guide-wrap__link {
-  display: inline-block;
-  width: 100%;
-  padding: 12px 0 12px 0;
 }
 
 .guide-wrap__item-ref {
@@ -294,8 +293,8 @@ html {
 }
 
 .features-wrap {
-  margin-top: 111px;
-  margin-left: 257px;
+  margin-top: 109px;
+  margin-left: 241px;
   width: 200px;
 
   @media screen and (max-width: 680px) {
@@ -381,10 +380,10 @@ html {
 }
 
 .image-wrap {
-  margin-top: 39px;
+  margin-top: 31px;
 
   @media screen and (min-width: 681px) and (max-width: 1199px) {
-    margin-top: 86px;
+    margin-top: 12px;
   }
 }
 
@@ -394,7 +393,7 @@ html {
     height: 217px;
   }
   
-  @media screen and (min-width: 681px) and (max-width: 1200px) {
+  @media screen and (min-width: 681px) and (max-width: 1199px) {
     width: 268px;
     height: 329px;
   }
