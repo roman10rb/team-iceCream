@@ -3,6 +3,9 @@
   padding-top: 12px;
   background-color: #84a178;
 }
+.page-head .container {
+  width: 100%;
+}
 
 .site-nav__logo,
 .menu-nav__logo {
