@@ -29,6 +29,10 @@ img {
 
 /* Розділ базових налаштвань (тимчасовий) */
 
+html {
+  scroll-behavior: smooth;
+} 
+
 /* позиціонування елементів */
 
 .hero {
@@ -43,15 +47,15 @@ img {
   margin: 0 auto;
     
   @media screen and (max-width: 680px) {
-    background-size: auto, contain;
+    background-size: 177px 217px, contain;
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom, bottom;
+    background-position: bottom left 83px, bottom;
     max-width: 320px;
     min-height: 502px;
   }
 
   @media screen and (min-width: 681px) and (max-width: 1200px) {
-    background-size: auto, contain;
+    background-size: 152px 152px, contain;
     background-repeat: no-repeat, no-repeat;
     background-position: left 32px bottom 12px, bottom;
     max-width: 768px;
@@ -59,7 +63,7 @@ img {
   }
   
   @media screen and (min-width: 1200px) {
-    background-size: auto, contain;
+    background-size: 225px 225px, contain;
     background-repeat: no-repeat, no-repeat;
     background-position: left 16px bottom 67px, bottom;
 
@@ -98,6 +102,7 @@ img {
   .hero--overlay {
     background-image: url("../images/img-hero/png/hero-plate-icecream.png"),
       url("../images/img-hero/png/point-line.png");
+    
   }
     
   @media (min-resolution: 2dppx) {
@@ -147,7 +152,7 @@ img {
     }
   }
 
-  @media screen and (min-width: 681px) and (max-width: 1199px) {
+  @media screen and (min-width: 681px) and (max-width: 1200px) {
     width: 247px;
     
     font-size: 26px;
@@ -165,6 +170,11 @@ img {
     width: 367px;
     font-size: 38px;
     line-height: 1.26;
+
+    .hero__title--passion {
+      font-size: 38px;
+      line-height: 1.26;
+    }
   }
 }
 
@@ -281,13 +291,11 @@ img {
       padding: 0;
     }
   }
-
-  }
+}
 
 .features-wrap {
   margin-top: 111px;
   margin-left: 257px;
-
   width: 200px;
 
   @media screen and (max-width: 680px) {
@@ -297,7 +305,6 @@ img {
   @media screen and (min-width: 681px) and (max-width: 1199px) {
     margin-top: 46px;
     margin-left: 200px;
-    
     width: 139px;
   }
 }
@@ -387,7 +394,7 @@ img {
     height: 217px;
   }
   
-  @media screen and (min-width: 681px) and (max-width: 1199px) {
+  @media screen and (min-width: 681px) and (max-width: 1200px) {
     width: 268px;
     height: 329px;
   }
@@ -453,3 +460,68 @@ img {
   }
 }
 
+/* анімація */
+
+@keyframes top-to-bottm {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottm-to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(560px);
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__title--move {
+  animation: top-to-bottm 1000ms ease 250ms 3 both;
+}
+
+.hero-main__image--mov {
+  animation: bottm-to-top 1000ms ease 250ms 1 both;
+}
+
+.icon--move {
+  animation: left-to-right 1000ms ease 250ms 3 both;
+}
