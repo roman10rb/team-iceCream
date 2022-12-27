@@ -4193,7 +4193,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(20%);
+  transform: translateX(-50%) translateY(25%);
   width: 280px;
   height: 996px;
   background-color: #fff;
@@ -4202,6 +4202,7 @@ ul {
   flex-direction: column;
   align-items: center;
   border: 2px solid #f8d24e;
+  z-index: 100;
 }
 @media screen and (min-width: 1200px) {
   .modal__products {
