@@ -6,6 +6,7 @@
 .site-nav__logo,
 .menu-nav__logo {
   text-decoration: none;
+  cursor: url(../images/cursor.png), pointer;
 }
 
 .site-nav,
@@ -15,7 +16,6 @@
   align-items: center;
   @media screen and(min-width:1200px) {
     justify-content: flex-start;
-    align-items: baseline;
   }
 }
 
@@ -27,12 +27,26 @@
   .mobile-menu-desktop {
     display: flex;
     padding-left: 308px;
-    padding-right: 204px;
+  }
+  .mobile-menu-desktop__item:not(:last-child) {
+    padding-right: 28px;
+  }
+  .mobile-menu-desktop__link {
+    color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .mobile-menu-desktop__item:hover .mobile-menu-desktop__link,
+  .mobile-menu-desktop__item:hover .mobile-menu-desktop__link {
+    color: #f8d24e;
+    cursor: url(../images/cursor.png), pointer;
   }
 }
 
 .site-nav__left-box {
   display: flex;
+  margin-left: auto;
 }
 
 .menu-nav {
@@ -44,7 +58,7 @@
   display: block;
   border: none;
   fill: #ffffff;
-
+  cursor: url(../images/cursor.png), pointer;
   &:hover &__svg,
   &:focus &__svg {
     color: #bbb;
@@ -67,6 +81,7 @@
 
 .mobile-menu__btn-modal2 {
   display: none;
+  cursor: url(../images/cursor.png), pointer;
 
   @media screen and(min-width: 768px) {
     display: flex;
