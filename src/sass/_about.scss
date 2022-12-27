@@ -9,8 +9,8 @@ $breakpoints: (
   'tablet': 768px,
   'desktop': 1200px,
 );
-.section-about__container,
-.container {
+.section-about__container/*,
+.container*/ {
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
