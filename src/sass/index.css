@@ -710,7 +710,7 @@
           transform: translate(-50%, -50%) scale(0.5);
 }
 
-.footer {
+.footer__bottom {
   position: relative;
   background-color: rgb(132, 161, 120);
   font-family: "Montserrat";
@@ -721,16 +721,16 @@
   padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer__bottom {
     padding-top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
+  .footer__bottom {
     padding-top: 120px;
   }
 }
-.footer__text {
+.footer__bottom__text {
   font-size: 18px;
   letter-spacing: 0.04em;
   margin-bottom: 16px;
@@ -738,7 +738,7 @@
   text-align: left;
 }
 @media screen and (min-width: 768px) {
-  .footer__text {
+  .footer__bottom__text {
     font-size: 26px;
     line-height: 1.23;
     margin-bottom: 8px;
@@ -746,28 +746,28 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__text {
+  .footer__bottom__text {
     font-size: 30px;
     margin-bottom: 14px;
     font-weight: 400;
     width: 510px;
   }
 }
-.footer__title {
+.footer__bottom__title {
   font-size: 34px;
   letter-spacing: 0.06em;
   line-height: 1.21;
   text-align: left;
 }
 @media screen and (min-width: 768px) {
-  .footer__title {
+  .footer__bottom__title {
     font-size: 48px;
     line-height: 1.23;
     width: 352px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__title {
+  .footer__bottom__title {
     font-size: 58px;
     line-height: 1.22;
     width: 500px;
@@ -886,7 +886,7 @@
   fill: #fcfcfc;
 }
 
-.footer__bottom-text {
+.footer__second-text {
   text-transform: none;
   font-size: 12px;
   line-height: 1.86;
@@ -894,12 +894,12 @@
   color: #131313;
 }
 @media screen and (min-width: 768px) {
-  .footer__bottom-text {
+  .footer__second-text {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__bottom-text {
+  .footer__second-text {
     font-size: 16px;
   }
 }
