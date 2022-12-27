@@ -112,6 +112,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #f8d24e;
     font-weight: 600;
     font-size: 14px;
@@ -307,12 +310,9 @@
           justify-content: center;
 }
 
-.mobile-menu__btn-text {
-  margin-right: 4px;
-}
-
 .mobile-menu__btn-icon {
   fill: currentColor;
+  margin-left: 4px;
 }
 
 .backdrop-m-menu.is-hidden-m-menu {
