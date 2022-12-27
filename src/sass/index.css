@@ -344,7 +344,7 @@
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
 
-.modal-btn {
+.modal2-btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
