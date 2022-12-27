@@ -278,6 +278,7 @@
   left: 50%;
   padding: 28px;
   background-color: #fcfcfc;
+  cursor: url(../images/cursor.png), pointer;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -300,7 +301,7 @@
   background-color: #fcfcfc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 .modal__icon {
   fill: #000000;
@@ -375,15 +376,15 @@
 
 .modal__product-item--green:hover {
   background-color: #96af8c;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 .modal__product-item--yellow:hover {
   background-color: #efd478;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 .modal__product-item--pink:hover {
   background-color: #d6936d;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 
 .modal__box-circle {
@@ -505,15 +506,18 @@
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
+    cursor: url(../images/cursor.png), pointer;
   }
   &:focus {
     color: #fcfcfc;
     background-color: #0a8817;
     border-color: #0a8817;
+    cursor: url(../images/cursor.png), pointer;
   }
   &:disabled {
     background-color: rgba(171, 171, 171, 1);
     border-color: rgba(171, 171, 171, 1);
+    cursor: url(../images/cursor.png), pointer;
   }
 }
 
@@ -550,6 +554,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  cursor: url(../images/cursor.png), pointer;
   z-index: 1;
 
   transform: translate(-50%, -50%) scale(1);
