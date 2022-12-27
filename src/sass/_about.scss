@@ -200,6 +200,13 @@ $breakpoints: (
   background: #0a8817;
   color: #fcfcfc;
 }
+.section-about__button:focus .name-modal {
+ fill: #fcfcfc;
+}
+.name-modal{
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 
+}
+
 .section-about__button:disabled {
   background: #ababab;
   color: #fcfcfc;
@@ -221,7 +228,7 @@ $breakpoints: (
     background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s,
     border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-.modal {
+.section-about__modal {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -243,7 +250,7 @@ $breakpoints: (
     top: 40%;
   }
 }
-.backdrop {
+.section-about__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -253,7 +260,7 @@ $breakpoints: (
   width: 100%;
   height: 100%;
 }
-.backdrop.is-hidden {
+.section-about__backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
