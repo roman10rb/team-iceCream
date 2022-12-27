@@ -114,12 +114,11 @@ html {
 .site-nav__btn {
   display: block;
   border: none;
-  fill: #ffffff;
+  color: #ffffff;
   cursor: url(../images/cursor.png), pointer;
 }
-.site-nav__btn:hover .site-nav__btn__svg, .site-nav__btn:focus .site-nav__btn__svg {
-  color: #bbb;
-  cursor: pointer;
+.site-nav__btn:hover, .site-nav__btn:focus {
+  color: #f8d24e;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -134,7 +133,7 @@ html {
 }
 
 .site-nav__svg {
-  fill: #ffffff;
+  fill: currentColor;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;

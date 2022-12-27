@@ -65,12 +65,11 @@
 .site-nav__btn {
   display: block;
   border: none;
-  fill: #ffffff;
+  color: #ffffff;
   cursor: url(../images/cursor.png), pointer;
-  &:hover &__svg,
-  &:focus &__svg {
-    color: #bbb;
-    cursor: pointer;
+  &:hover,
+  &:focus {
+    color: #f8d24e;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,7 +80,7 @@
   }
 }
 .site-nav__svg {
-  fill: #ffffff;
+  fill: currentColor;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
