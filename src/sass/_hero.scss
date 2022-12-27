@@ -482,6 +482,7 @@ html {
   0% {
     opacity: 0;
     transform: translateY(560px);
+    rotate: (0deg);
   }
 
   25% {
@@ -495,6 +496,7 @@ html {
   100% {
     opacity: 1;
     transform: translateY(0);
+    rotate: (360deg);
   }
 }
 
@@ -515,13 +517,13 @@ html {
 }
 
 .hero__title--move {
-  animation: top-to-bottm 1000ms ease 250ms 3 both;
+  animation: top-to-bottm 1000ms ease 250ms 1 both;
 }
 
 .hero-main__image--mov {
-  animation: bottm-to-top 1000ms ease 750ms 1 both;
+  animation: bottm-to-top 1000ms ease 500ms 1 both;
 }
 
 .icon--move {
-  animation: left-to-right 1000ms ease 1250ms 2 both;
+  animation: left-to-right 1000ms ease 1250ms 1 both;
 }
