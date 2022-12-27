@@ -1,4 +1,38 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  font-size: 40px;
+  z-index: 100;
+  fill: #325C07;
+}
+@media screen and (min-width: 768px) {
+  #scrollTop {
+    bottom: 50px;
+    right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #scrollTop {
+    bottom: 70px;
+    right: 50px;
+  }
+}
+
+.isShowBtn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+.isShowBtn_hide {
+  opacity: 0;
+}
+
 .page-head {
   padding-top: 12px;
   background-color: #84a178;
@@ -201,6 +235,7 @@
   background-color: #84a178;
   z-index: 999;
   opacity: 0;
+  overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition-property: -webkit-transform;
@@ -719,6 +754,7 @@
   padding: 32px 54px;
   background-color: #fcfcfc;
   margin: auto;
+  overflow-y: scroll;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -1003,12 +1039,25 @@
 }
 
 body {
-  background-color: #84a178;
   font-family: "Montserrat", sans-serif;
 }
 
 p {
   margin: 0;
+}
+
+.contacts {
+  background-image: linear-gradient(to bottom, rgba(132, 161, 120, 0) 353px, rgb(132, 161, 120) 353px, rgb(132, 161, 120) 100%);
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, rgba(132, 161, 120, 0) 299px, rgb(132, 161, 120) 299px, rgb(132, 161, 120) 100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, rgba(132, 161, 120, 0) 128px, rgb(132, 161, 120) 128px, rgb(132, 161, 120) 100%);
+  }
 }
 
 .link {
@@ -1723,9 +1772,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-repeat: repeat;
-  background-image: url(../images/backdropdesktop@1x.jpg);
-  background-position: center;
   margin: 0 auto;
 }
 
@@ -4166,10 +4212,21 @@ img {
 
 body {
   padding-bottom: 20px;
-  background-color: rgb(132, 161, 120);
+  position: relative;
+  background-image: url(../images/backgroud_mobile.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 @media screen and (min-width: 768px) {
   body {
+    background-image: url(../images/background_tablet.jpg);
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/backdropdesktop@1x.jpg);
     padding-bottom: 12px;
   }
 }
