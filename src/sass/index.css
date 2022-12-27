@@ -4,7 +4,7 @@
   background-color: #84a178;
 }
 .page-head .container {
-  width: 100%;
+  max-width: 1200px;
 }
 
 .site-nav__logo,
