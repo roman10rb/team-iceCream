@@ -165,6 +165,7 @@
   background-color: #84a178;
   z-index: 999;
   opacity: 0;
+  overflow-y: scroll;
 
   transform: translateX(100%);
   transition-property: transform;
@@ -265,19 +266,35 @@
 
 // Модалка
 
-.backdrop-m-menu.is-hidden-m-menu {
-  opacity: 0;
-  background-color: #fcfcfc;
-  visibility: hidden;
-  pointer-events: none;
+.backdrop-m-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(252, 252, 252, 0.1);
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  transform: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
 }
+
+.backdrop-m-menu.is-hidden-m-menu {
+  transform: opacity;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal-m-menu {
   position: fixed;
   top: 0;
   left: 50%;
   padding: 28px;
   background-color: #fcfcfc;
+  overflow-y: scroll;
   cursor: url(../images/cursor.png), pointer;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -546,22 +563,23 @@
 
 .modal2 {
   position: absolute;
-  top: 50%;
+  top: 40px;
   left: 50%;
   padding: 32px 54px;
   background-color: #fcfcfc;
   margin: auto;
+  overflow-y: scroll;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   cursor: url(../images/cursor.png), pointer;
   z-index: 1;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop2.is-hidden2 .modal2 {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, 0) scale(0.5);
 }
