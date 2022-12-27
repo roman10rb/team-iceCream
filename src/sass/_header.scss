@@ -145,14 +145,14 @@
 
   &:hover &__icon-close,
   &:focus &__icon-close {
-    color: #ffffff;
-    cursor: pointer;
-    transition-property: color;
+    fill: #131313;
+    cursor: url(../images/cursor.png), pointer;
+    transition-property: fill;
   }
 
   &__icon-close {
     fill: currentColor;
-    transition-property: color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -216,7 +216,7 @@
   &__item:hover &__link,
   &__item:focus &__link {
     color: #131313;
-    cursor: pointer;
+    cursor: url(../images/cursor.png), pointer;
   }
 }
 .menu-toggle__icon-close {
