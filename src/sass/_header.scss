@@ -1,6 +1,15 @@
 .page-head {
+  position: fixed;
   padding-top: 12px;
   background-color: #84a178;
+  width: 100%;
+  z-index: 1;
+}
+.hero {
+  padding-top: 60px;
+}
+.page-head .container {
+  margin: 0 auto;
 }
 
 .site-nav__logo,
@@ -503,7 +512,7 @@
     border-color: #84a178;
   }
 
-  &:required:invalid{
+  &:required:invalid {
     border-color: red;
   }
 }
