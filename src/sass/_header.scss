@@ -480,6 +480,14 @@
     padding: 11px 16px;
   }
   background-color: rgba(248, 210, 78, 0.1);
+
+  &:required:valid {
+    border-color: #84a178;
+  }
+
+  &:required:invalid{
+    border-color: red;
+  }
 }
 .modal__input::placeholder,
 .modal__textarea::placeholder {
