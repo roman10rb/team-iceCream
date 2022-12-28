@@ -37,14 +37,6 @@ html {
   padding-top: 12px;
   background-color: #84a178;
 }
-.page-head .container {
-  max-width: 1200px;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .page-head .container {
-    width: 100%;
-  }
-}
 
 .site-nav__logo,
 .menu-nav__logo {
