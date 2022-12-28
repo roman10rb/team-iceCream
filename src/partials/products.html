@@ -139,13 +139,50 @@
             <div class="products__item-fon-milk">
               <div class="products__picture">
                 <div class="products__item-picture">
-                  <img
-                    class="products__item-img"
-                    src="./images/milkshake1x.jpg"
-                    alt="Молочний коктейль"
-                    width="302"
-                    height="302"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/3_lg@1x.webp 1x,
+                        ./images/products/3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/3_lg@1x.jpg 1x,
+                        ./images/products/3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet and Mobile screen -->
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/3_md@1x.webp 1x,
+                        ./images/products/3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/3_md@1x.jpg 1x,
+                        ./images/products/3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="products__item-img"
+                      src="./images/products/3_md@1x.jpg"
+                      alt="Молочний коктейль"
+                      width="302"
+                      height="302"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
