@@ -181,6 +181,7 @@ $breakpoints: (
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url(../images/cursor.png), pointer;
 
   @media screen and(min-width:768px) {
     margin-left: 0;
@@ -264,6 +265,8 @@ $breakpoints: (
   right: 10px;
   border: 0;
   background-color: #fff;
+  cursor: url(../images/cursor.png), pointer;
+  
 }
 .section-about__title-modal {
   font-family: Seymour One;

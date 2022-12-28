@@ -1,4 +1,4 @@
-<section class="products">
+<section class="products" id="products">
   <div class="products__container">
     <div class="products__headlines">
       <p class="products__title">100% natural</p>
@@ -11,14 +11,50 @@
             <div class="products__item-fon">
               <div class="products__picture">
                 <div class="products__item-picture">
-                  <img
-                    class="products__item-img"
-                    src="./images/desktopicecream@1x.jpg"
-                    alt="Морозиво"
-                    radius="50%"
-                    width="302"
-                    height="302"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/1_lg@1x.webp 1x,
+                        ./images/products/1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/1_lg@1x.jpg 1x,
+                        ./images/products/1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet and Mobile screen -->
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/1_md@1x.webp 1x,
+                        ./images/products/1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/1_md@1x.jpg 1x,
+                        ./images/products/1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="products__item-img"
+                      src="./images/products/1_md@1x.jpg"
+                      alt="Морозиво"
+                      width="302"
+                      height="302"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -39,14 +75,50 @@
             <div class="products__item-fon-coffe">
               <div class="products__picture">
                 <div class="products__item-picture">
-                  <img
-                    class="products__item-img"
-                    src="./images/desktopicecoffe@1x.jpg"
-                    alt="Холодна кава"
-                    radius="50%"
-                    width="302"
-                    height="302"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/2_lg@1x.webp 1x,
+                        ./images/products/2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/2_lg@1x.jpg 1x,
+                        ./images/products/2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet and Mobile screen -->
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/2_md@1x.webp 1x,
+                        ./images/products/2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/2_md@1x.jpg 1x,
+                        ./images/products/2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="products__item-img"
+                      src="./images/products/2_md@1x.jpg"
+                      alt="Холодна кава"
+                      width="302"
+                      height="302"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -67,14 +139,50 @@
             <div class="products__item-fon-milk">
               <div class="products__picture">
                 <div class="products__item-picture">
-                  <img
-                    class="products__item-img"
-                    src="./images/milkshake1x.jpg"
-                    alt="Молочний коктейль"
-                    radius="50%"
-                    width="302"
-                    height="302"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/3_lg@1x.webp 1x,
+                        ./images/products/3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/products/3_lg@1x.jpg 1x,
+                        ./images/products/3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet and Mobile screen -->
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/3_md@1x.webp 1x,
+                        ./images/products/3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./images/products/3_md@1x.jpg 1x,
+                        ./images/products/3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="products__item-img"
+                      src="./images/products/3_md@1x.jpg"
+                      alt="Молочний коктейль"
+                      width="302"
+                      height="302"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -97,7 +205,7 @@
     <div class="backdrop is-hidden" data-modal1>
       <div class="modal__products">
         <button type="button" class="modal__products-button" data-modal-close1>
-          <svg width="13" height="13">
+          <svg width="20" height="20">
             <use href="./images/iconsSprite.svg#icon-clarity_close-line"></use>
           </svg>
         </button>
@@ -232,16 +340,14 @@
           </div>
         </div>
         <div class="products__div-label">
-          <label for="" class="products__modal-label">
+          <label  class="products__modal-label">
             <input type="text" class="products__input" placeholder="Name" />
           </label>
-          <label for="" class="products__modal-label">
+          <label  class="products__modal-label">
             <input type="text" class="products__input" placeholder="Phone" />
           </label>
-          <label for="" class="products__modal-label">
+          <label  class="products__modal-label">
             <textarea
-              name=""
-              id=""
               cols="30"
               rows="10"
               class="products__textarea"
