@@ -161,6 +161,7 @@
     margin: 0 auto;
     overflow: hidden;
     gap: 12px;
+
     //phone screen
      @media screen and (min-width: 480px) {
         width: 200px;
@@ -185,6 +186,12 @@
             overflow: hidden;
             gap: 12px;
         }
+}
+.products__item-picture img{
+    transition: transform 0.5s;
+}
+.products__item-picture:hover img{
+    transform: scale(1.25);
 }
 .products__item-fon {
     position: absolute;
