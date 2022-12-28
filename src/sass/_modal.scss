@@ -350,9 +350,9 @@ ul {
 
 .modal__products {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     width: 280px;
     background-color: #fff;
     border-radius: 10px;
