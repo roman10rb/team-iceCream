@@ -286,8 +286,11 @@ ul {
     @media screen and(min-width:1200px) {
         width: 368px;
     }
-
-
+    &:hover,
+    &:focus,
+    &:focus-visible {
+    border-color: var(--border-outline-modal-color);
+    }
 
 }
 
@@ -318,26 +321,38 @@ ul {
         width: 368px;
     }
 
-
+    &:hover,
+    &:focus,
+    &:focus-visible {
+    border-color: var(--border-outline-modal-color);
+    }
 }
 
 .products__modal-button {
-    width: 121px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 132px;
     height: 42px;
     background: #F8D24E;
+    color:#131313;
     border-radius: 10px;
     border: 0;
     cursor: url(../images/cursor.png), pointer;
+
+    &:focus {
+        background-color: var(--hover-btn-bg-color);
+        color: var(--white-btn-text-color);
+    }
+    &:hover {
+        background-color: var(--hover-btn-bg-color);
+        color: var(--black-btn-text-color);
+    }
 }
 
-.products__modal-button:hover {
-    background-color: rgba(10, 136, 23, 1);
-    color: rgba(0, 0, 0, 1);
-}
 
-.products__modal-button:focus {
-    color: rgba(252, 252, 252, 1);
-}
 
 .backdrop {
     position: fixed;
@@ -382,7 +397,20 @@ ul {
 
 .modal__products-button {
     position: absolute;
-    top: 17px;
-    right: 17px;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 12px;
     cursor: url(../images/cursor.png), pointer;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      fill: var(--border-outline-modal-color);
+    }
+
+    @media screen and(min-width:768px) {
+
+    width: 24px;
+    height: 24px; 
+    }
 }
