@@ -357,7 +357,8 @@
     @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 60px;
+        row-gap: 60px;
+        column-gap: 210px;
         justify-content: center;
         }
         //tablet screen
