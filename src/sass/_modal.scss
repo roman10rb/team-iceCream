@@ -327,6 +327,7 @@ ul {
     background: #F8D24E;
     border-radius: 10px;
     border: 0;
+    cursor: url(../images/cursor.png), pointer;
 }
 
 .backdrop {
@@ -374,4 +375,5 @@ ul {
     position: absolute;
     top: 17px;
     right: 17px;
+    cursor: url(../images/cursor.png), pointer;
 }
