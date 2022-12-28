@@ -161,6 +161,7 @@
     margin: 0 auto;
     overflow: hidden;
     gap: 12px;
+
     //phone screen
      @media screen and (min-width: 480px) {
         width: 200px;
@@ -739,4 +740,15 @@
     letter-spacing: 0.04em;
     color: #131313;
     margin-bottom: 0;
+}
+
+button #data-modal-open1 {
+cursor: url(../images/cursor.png), pointer;
+}
+
+.products__fon-ice-cream button,
+.products__fon-ice-coffe button,
+.products__fon-milk-shake button
+ {
+cursor: url(../images/cursor.png), pointer;
 }

@@ -8,7 +8,7 @@ html {
     right: 15px;
     font-size: 40px;
     z-index: 100;
-    fill: #325C07;
+    fill: rgba(43, 118, 12, 0.6);
    
     @media screen and (min-width: 768px) {
       bottom: 50px;
@@ -22,10 +22,11 @@ html {
   }
   
   .isShowBtn {
-    transition: .4s;
+cursor: url(../images/cursor.png), pointer;
     opacity: 1;
   
     &_hide {
       opacity: 0;
-    }
+      transition: .4s;
+cursor: auto;    }
   }

@@ -1,6 +1,6 @@
 <!-- Розділ розмітка секції Герой -->
 
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero--overlay">
     <div class="containerr">
       <!-- загальна обгортка лівої частини-->
@@ -11,18 +11,16 @@
         </h1>
 
         <!-- кнопки -->
-
-        <div class="guide-wrap">
-          <ul class="guide-wrap__list">
-            <li class="guide-wrap__item guide-wrap__item-btn">
-              <a class="guide-wrap__link" href="#products">Products</a>
-            </li>
-            <li class="guide-wrap__item guide-wrap__item-ref">
-              <a class="guide-wrap__link" href="#howitsmade">How it’s made?</a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="guide-wrap">
+        <ul class="guide-wrap__list">
+          <li class="guide-wrap__item guide-wrap__item-btn">
+            <a class="guide-wrap__link" href="#products">Products</a>
+          </li>
+          <li class="guide-wrap__item guide-wrap__item-ref">
+            <a class="guide-wrap__link" href="#about">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
         <!-- слайдер поряд із стрілкою -->
 
         <div class="features-wrap">
@@ -49,7 +47,6 @@
           </a>
         </div>
       </div>
-
       <!-- загальна обгортка правої частини -->
 
       <div class="hero__right-wrap">
@@ -66,23 +63,17 @@
             height="560"
           />
         </div>
-
-        <div class="hero-service__wrap">
-          <ul class="hero-service__list">
-            <li class="hero-service__item-cafes">
-              <span class="hero-service__numb hero-service__numb-cafes"
-                >16</span
-              >
-              <p class="hero-service__text">cafes</p>
-            </li>
-            <li class="hero-service__item-trucks">
-              <span class="hero-service__numb hero-service__numb-trucks"
-                >23</span
-              >
-              <p class="hero-service__text">food trucks</p>
-            </li>
-          </ul>
-        </div>
+      <div class="hero-service__wrap">
+        <ul class="hero-service__list">
+          <li class="hero-service__item-cafes">
+            <span data-digits-counter class="hero-service__numb hero-service__numb-cafes">16</span>
+            <p class="hero-service__text">cafes</p>
+          </li>
+          <li class="hero-service__item-trucks">
+            <span data-digits-counter class="hero-service__numb hero-service__numb-trucks">23</span>
+            <p class="hero-service__text">food trucks</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -3,14 +3,14 @@
     display: block;
     padding-right: 45px;
     padding-left: 45px;
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 10px;
 
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: nowrap;
-        padding: 60px 76px;
+        padding: 10px 76px;
 
     }
 
@@ -130,6 +130,18 @@
         }
 
     }
+
+    &__counter {
+        display: inline;
+        text-align:start;
+    }
+
+    &__wrapper-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
