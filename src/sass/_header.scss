@@ -1,20 +1,33 @@
 .page-head {
+  position: fixed;
   padding-top: 12px;
   background-color: #84a178;
-  & .container {
-    max-width: 1200px;
-  }
-  @media screen and(min-width:320px) and (max-width: 767px) {
-    & .container {
-      width: 100%;
-    }
-  }
+  width: 100%;
+  z-index: 1;
+}
+.hero {
+  padding-top: 60px;
+}
+.page-head .container {
+  margin: 0 auto;
 }
 
 .site-nav__logo,
 .menu-nav__logo {
   text-decoration: none;
   cursor: url(../images/cursor.png), pointer;
+  transform: rotateX(0deg);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__logo:hover,
+.menu-nav__logo:hover {
+  transform: rotateX(180deg);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav,
@@ -70,7 +83,8 @@
   &:hover,
   &:focus {
     color: #f8d24e;
-    transition-property: color;
+    scale: 1.2;
+    transition-property: scale;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -81,7 +95,8 @@
 }
 .site-nav__svg {
   fill: currentColor;
-  transition-property: color;
+  scale: 1;
+  transition-property: scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -147,6 +162,10 @@
     fill: #131313;
     cursor: url(../images/cursor.png), pointer;
     transition-property: fill;
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__icon-close {
@@ -323,6 +342,14 @@
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 50%;
   cursor: url(../images/cursor.png), pointer;
+
+  &:hover,
+  &:focus {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .modal__icon {
   fill: #000000;
@@ -485,7 +512,7 @@
     border-color: #84a178;
   }
 
-  &:required:invalid{
+  &:required:invalid {
     border-color: red;
   }
 }
