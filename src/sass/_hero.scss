@@ -183,8 +183,9 @@ html {
 }
 
 .guide-wrap {
+  display: flex;
   margin-top: 28px;
-
+  
   @media screen and (max-width: 680px) {
     margin-top: 32px;
   }
@@ -201,8 +202,9 @@ html {
 }
 
 .guide-wrap__item-btn {
-  width: 134px;
-  height: 42px;
+  min-width: 134px;
+  min-height: 42px;
+  
   
   margin-right: 12px;
   
@@ -222,22 +224,18 @@ html {
     
     &:hover {
       border-color: #0A8817;
-      color: #FCFCFC;
     }
     
     &:focus {
       border-color: #0A8817;
       color: #FCFCFC;
     }
-
-    &:focus {
-      color: #FCFCFC;
-    }
   }
 
   @media screen and (max-width: 1199px) {
-    width: 108px;
-    height: 38px;
+    min-width: 108px;
+    min-height: 38px;
+    
     font-size: 12px;
 
     .guide-wrap__link {
@@ -248,8 +246,9 @@ html {
 }
 
 .guide-wrap__item-ref {
-  width: 154px;
-  height: 40px;
+  min-width: 154px;
+  min-height: 40px;
+  
   
   margin-right: 12px;
    
@@ -272,8 +271,9 @@ html {
    }
 
   @media screen and (max-width: 1199px) {
-    width: 114px;
-    height: 24px;
+    min-width: 114px;
+    min-height: 24px;
+    
 
     .guide-wrap__link {
       font-size: 12px;
