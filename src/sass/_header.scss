@@ -7,6 +7,18 @@
 .menu-nav__logo {
   text-decoration: none;
   cursor: url(../images/cursor.png), pointer;
+  rotate: 0;
+  transition-property: rotate;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__logo:hover,
+.menu-nav__logo:hover {
+  rotate: 360deg;
+  transition-property: rotate;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav,
