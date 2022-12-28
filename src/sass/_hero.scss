@@ -396,6 +396,15 @@ html {
   }
 }
 
+.hero-service__wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 46px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 79px;
+  }
+}
+
 .hero-service__item-cafes {
   margin-top: 53px;
   margin-left: 24px;

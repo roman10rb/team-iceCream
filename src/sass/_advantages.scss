@@ -130,6 +130,18 @@
         }
 
     }
+
+    &__counter {
+        display: inline;
+        text-align:start;
+    }
+
+    &__wrapper-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
