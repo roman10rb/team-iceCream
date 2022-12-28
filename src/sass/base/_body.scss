@@ -16,7 +16,14 @@ body {
     background-image: url(../images/backdropdesktop@1x.jpg);
     // padding-bottom: 12px;
   }
+    animation: moveSlideshow 600s linear infinite;
 }
+
+                                
+ @keyframes moveSlideshow {
+100% {
+ background-position: 150vw 400vh;}
+                 }
 
 a, button {
   cursor: url(../images/cursor.png), pointer;
