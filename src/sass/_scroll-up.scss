@@ -22,11 +22,11 @@ html {
   }
   
   .isShowBtn {
-    
+cursor: url(../images/cursor.png), pointer;
     opacity: 1;
   
     &_hide {
       opacity: 0;
       transition: .4s;
-    }
+cursor: auto;    }
   }

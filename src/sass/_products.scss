@@ -740,3 +740,14 @@
     color: #131313;
     margin-bottom: 0;
 }
+
+button #data-modal-open1 {
+cursor: url(../images/cursor.png), pointer;
+}
+
+.products__fon-ice-cream button,
+.products__fon-ice-coffe button,
+.products__fon-milk-shake button
+ {
+cursor: url(../images/cursor.png), pointer;
+}
