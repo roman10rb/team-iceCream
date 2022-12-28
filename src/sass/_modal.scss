@@ -330,6 +330,15 @@ ul {
     cursor: url(../images/cursor.png), pointer;
 }
 
+.products__modal-button:hover {
+    background-color: rgba(10, 136, 23, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.products__modal-button:focus {
+    color: rgba(252, 252, 252, 1);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
