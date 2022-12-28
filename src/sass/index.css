@@ -111,8 +111,9 @@ html {
 }
 .site-nav__btn:hover, .site-nav__btn:focus {
   color: #f8d24e;
-  -webkit-transition-property: color;
-  transition-property: color;
+  scale: 1.2;
+  -webkit-transition-property: scale;
+  transition-property: scale;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,8 +127,9 @@ html {
 
 .site-nav__svg {
   fill: currentColor;
-  -webkit-transition-property: color;
-  transition-property: color;
+  scale: 1;
+  -webkit-transition-property: scale;
+  transition-property: scale;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
