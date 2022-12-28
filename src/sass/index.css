@@ -229,6 +229,16 @@ html {
   cursor: url(../images/cursor.png), pointer;
   -webkit-transition-property: fill;
   transition-property: fill;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-toggle__icon-close {
   fill: currentColor;
@@ -441,6 +451,18 @@ html {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 50%;
   cursor: url(../images/cursor.png), pointer;
+}
+.modal2-btn:hover, .modal2-btn:focus {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__icon {
