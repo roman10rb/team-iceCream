@@ -629,6 +629,18 @@ html {
   background-color: #d6936d;
 }
 
+#check1m:checked ~ .input-box--green {
+  background-color: #96af8c;
+}
+
+#check2m:checked ~ .input-box--yellow {
+  background-color: #efd478;
+}
+
+#check3m:checked ~ .input-box--pink {
+  background-color: #d6936d;
+}
+
 .modal__product-item--green:hover {
   background-color: #96af8c;
   -webkit-transition-property: background-color;
