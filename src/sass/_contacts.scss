@@ -701,11 +701,18 @@ align-items: center;
   .modal-maps{
   width: 224px;
   height: 199px;
-  border: none;
+  border-radius: 10px;
+  background-image: url(../images/Poltava/Poltava480.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     width: 448px;
     height: 260px;
+    background-image: url(../images/Poltava/Poltava720.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 }
 
