@@ -41,7 +41,7 @@ html {
   padding-bottom: 12px;
   background-color: #84a178;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 0.5px solid rgba(248, 201, 78, 0.5);
 }
 
@@ -590,16 +590,34 @@ html {
 
 .modal__product-item--green:hover {
   background-color: #96af8c;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 
 .modal__product-item--yellow:hover {
   background-color: #efd478;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 
 .modal__product-item--pink:hover {
   background-color: #d6936d;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 
@@ -825,7 +843,7 @@ html {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -3665,12 +3683,12 @@ html {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 10px 76px;
+    padding: 10px 76px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding: 60px 16px 80px;
+    padding: 10px 16px 80px;
   }
 }
 .advantages__item {
@@ -3688,6 +3706,12 @@ html {
   width: 50px;
   border-radius: 50%;
   background-color: #F8D24E;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
@@ -3698,6 +3722,10 @@ html {
   .advantages__item {
     margin-bottom: 40px;
   }
+}
+.advantages__item:hover, .advantages__item:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .advantages__box {
   margin-bottom: 22px;
@@ -3730,6 +3758,7 @@ html {
 }
 .advantages__icon {
   fill: currentColor;
+  color: rgb(19, 19, 19);
 }
 .advantages__title {
   font-family: Montserrat;
@@ -5038,6 +5067,15 @@ ul {
   border-radius: 10px;
   border: 0;
   cursor: url(../images/cursor.png), pointer;
+}
+
+.products__modal-button:hover {
+  background-color: rgb(10, 136, 23);
+  color: rgb(0, 0, 0);
+}
+
+.products__modal-button:focus {
+  color: rgb(252, 252, 252);
 }
 
 .backdrop {
