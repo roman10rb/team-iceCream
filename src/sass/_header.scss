@@ -420,11 +420,29 @@
 .modal__product-item--green {
   border: 2px solid #96af8c;
 }
+
 .modal__product-item--yellow {
   border: 2px solid #efd478;
 }
+
 .modal__product-item--pink {
   border: 2px solid #d6936d;
+}
+
+.modal__product-list input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.modal__product-item--green label {
+  cursor: url(../images/cursor.png), pointer;
+}
+
+.modal__product-item--green input:checked ~ .modal__product-item--green {
+  background-color: #96af8c;
 }
 
 .modal__product-item--green:hover {
@@ -434,6 +452,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
+
 .modal__product-item--yellow:hover {
   background-color: #efd478;
   transition-property: background-color;

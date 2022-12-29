@@ -588,6 +588,22 @@ html {
   border: 2px solid #d6936d;
 }
 
+.modal__product-list input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.modal__product-item--green label {
+  cursor: url(../images/cursor.png), pointer;
+}
+
+.modal__product-item--green input:checked ~ .modal__product-item--green {
+  background-color: #96af8c;
+}
+
 .modal__product-item--green:hover {
   background-color: #96af8c;
   -webkit-transition-property: background-color;
