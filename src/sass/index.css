@@ -9,7 +9,7 @@ html {
   right: 15px;
   font-size: 40px;
   z-index: 100;
-  fill: rgba(43, 118, 12, 0.6);
+  fill: #f8d24e;
 }
 @media screen and (min-width: 768px) {
   #scrollTop {
@@ -617,7 +617,7 @@ html {
   margin: -1px;
 }
 
-#check1:checked ~ .input-box--green {
+#check1:checked ~ .input-box--green#check1 {
   background-color: #96af8c;
 }
 

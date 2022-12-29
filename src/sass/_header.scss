@@ -452,7 +452,7 @@
   margin: -1px;
 }
 
-#check1:checked ~ .input-box--green {
+#check1:checked ~ .input-box--green#check1 {
   background-color: #96af8c;
 }
 #check2:checked ~ .input-box--yellow {
