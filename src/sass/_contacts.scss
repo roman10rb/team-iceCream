@@ -488,6 +488,7 @@ align-items: center;
     color: var(--dark-btn-text-color);
     border:none;
     padding: 0;
+        cursor: url(../images/cursor.png), pointer;
     &:hover,
     &:focus,
     &:focus-visible {
@@ -523,10 +524,9 @@ align-items: center;
     font-size: 12px;
     line-height: 1.25;
     border: none;
-    margin-top: 23px;
-    cursor: pointer;
-
-    &:focus {
+    margin-top: 32px;
+  cursor: url(../images/cursor.png), pointer;
+      &:focus {
       background-color: var(--hover-btn-bg-color);
       color: var(--white-btn-text-color);
     }

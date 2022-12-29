@@ -327,6 +327,16 @@ ul {
     background: #F8D24E;
     border-radius: 10px;
     border: 0;
+    cursor: url(../images/cursor.png), pointer;
+}
+
+.products__modal-button:hover {
+    background-color: rgba(10, 136, 23, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.products__modal-button:focus {
+    color: rgba(252, 252, 252, 1);
 }
 
 .backdrop {
@@ -374,4 +384,5 @@ ul {
     position: absolute;
     top: 17px;
     right: 17px;
+    cursor: url(../images/cursor.png), pointer;
 }
