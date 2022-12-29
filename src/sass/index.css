@@ -588,6 +588,23 @@ html {
   border: 2px solid #d6936d;
 }
 
+.modal__product-list input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.modal__product-item label {
+  background-color: currentColor;
+  cursor: url(../images/cursor.png), pointer;
+}
+
+input#ice-creem1:checked ~ li.modal__product-item--green {
+  background-color: #96af8c;
+}
+
 .modal__product-item--green:hover {
   background-color: #96af8c;
   -webkit-transition-property: background-color;
@@ -855,21 +872,6 @@ html {
 .backdrop2.is-hidden2 .modal2 {
   -webkit-transform: translate(-50%, 0) scale(0.5);
           transform: translate(-50%, 0) scale(0.5);
-}
-
-.modal__product-list input {
-  display: none;
-}
-
-input [ice-creem1]:checked ~ .modal__product-item--green {
-  background-color: #96af8c;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: url(../images/cursor.png), pointer;
 }
 
 .footer__bottom {
