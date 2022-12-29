@@ -596,12 +596,11 @@ html {
   margin: -1px;
 }
 
-.modal__product-item label {
-  background-color: currentColor;
+.modal__product-item--green label {
   cursor: url(../images/cursor.png), pointer;
 }
 
-input#ice-creem1:checked ~ li.modal__product-item--green {
+.modal__product-item--green input:checked .modal__product-item--green label {
   background-color: #96af8c;
 }
 
