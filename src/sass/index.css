@@ -857,6 +857,21 @@ html {
           transform: translate(-50%, 0) scale(0.5);
 }
 
+.modal__product-list input {
+  display: none;
+}
+
+input [ice-creem1]:checked ~ .modal__product-item--green {
+  background-color: #96af8c;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: url(../images/cursor.png), pointer;
+}
+
 .footer__bottom {
   position: relative;
   background-color: rgb(132, 161, 120);
