@@ -1,9 +1,11 @@
 .page-head {
   position: fixed;
   padding-top: 12px;
+  padding-bottom: 12px;
   background-color: #84a178;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  border-bottom: 0.5px solid rgba(248, 201, 78, 0.5);
 }
 .hero {
   padding-top: 60px;
@@ -61,6 +63,9 @@
   .mobile-menu-desktop__item:hover .mobile-menu-desktop__link,
   .mobile-menu-desktop__item:hover .mobile-menu-desktop__link {
     color: #f8d24e;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: url(../images/cursor.png), pointer;
   }
 }
@@ -424,14 +429,23 @@
 
 .modal__product-item--green:hover {
   background-color: #96af8c;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 .modal__product-item--yellow:hover {
   background-color: #efd478;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 .modal__product-item--pink:hover {
   background-color: #d6936d;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url(../images/cursor.png), pointer;
 }
 
@@ -609,7 +623,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 1;
+  z-index: 2;
 
   transform: translate(-50%, 0) scale(1);
 
