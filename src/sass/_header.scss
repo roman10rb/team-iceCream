@@ -69,8 +69,9 @@
     cursor: url(../images/cursor.png), pointer;
   }
 }
-.mobile-menu-desktop__item:active .mobile-menu-desktop__link {
-  color: #f8d24e;
+
+.mobile-menu-desktop__link.currentabout:visited ~ .about {
+  padding-top: 74px;
 }
 
 .site-nav__left-box {
