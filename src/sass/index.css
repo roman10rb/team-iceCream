@@ -42,7 +42,7 @@ html {
   background-color: #84a178;
   width: 100%;
   z-index: 2;
-  border-bottom: 0.5px solid rgba(248, 201, 78, 0.5);
+  border-bottom: 1px solid rgba(248, 201, 78, 0.5);
 }
 
 .hero {
@@ -136,10 +136,6 @@ html {
     cursor: url(../images/cursor.png), pointer;
   }
 }
-.mobile-menu-desktop__link.currentabout:visited ~ .about {
-  padding-top: 74px;
-}
-
 .site-nav__left-box {
   display: -webkit-box;
   display: -ms-flexbox;
