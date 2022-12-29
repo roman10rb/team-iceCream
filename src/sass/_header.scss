@@ -5,7 +5,7 @@
   background-color: #84a178;
   width: 100%;
   z-index: 2;
-  border-bottom: 0.5px solid rgba(248, 201, 78, 0.5);
+  border-bottom: 1px solid rgba(248, 201, 78, 0.5);
 }
 .hero {
   padding-top: 60px;
@@ -61,7 +61,7 @@
     line-height: 1.25;
   }
   .mobile-menu-desktop__item:hover .mobile-menu-desktop__link,
-  .mobile-menu-desktop__item:hover .mobile-menu-desktop__link {
+  .mobile-menu-desktop__item:focus .mobile-menu-desktop__link {
     color: #f8d24e;
     transition-property: color;
     transition-duration: 250ms;
@@ -417,16 +417,31 @@
   }
 }
 
-.modal__product-item--green {
+.input-box--green {
   border: 2px solid #96af8c;
+  border-radius: 15px;
+  cursor: url(../images/cursor.png), pointer;
+  @media screen and(min-width:768px) {
+    height: 135px;
+  }
 }
 
-.modal__product-item--yellow {
+.input-box--yellow {
   border: 2px solid #efd478;
+  border-radius: 15px;
+  cursor: url(../images/cursor.png), pointer;
+  @media screen and(min-width:768px) {
+    height: 135px;
+  }
 }
 
-.modal__product-item--pink {
+.input-box--pink {
   border: 2px solid #d6936d;
+  border-radius: 15px;
+  cursor: url(../images/cursor.png), pointer;
+  @media screen and(min-width:768px) {
+    height: 135px;
+  }
 }
 
 .modal__product-list input {
@@ -437,12 +452,24 @@
   margin: -1px;
 }
 
-.modal__product-item--green label {
-  cursor: url(../images/cursor.png), pointer;
+#check1:checked ~ .input-box--green#check1 {
+  background-color: #96af8c;
+}
+#check2:checked ~ .input-box--yellow {
+  background-color: #efd478;
+}
+#check3:checked ~ .input-box--pink {
+  background-color: #d6936d;
 }
 
-.modal__product-item--green input:checked ~ .modal__product-item--green {
+#check1m:checked ~ .input-box--green {
   background-color: #96af8c;
+}
+#check2m:checked ~ .input-box--yellow {
+  background-color: #efd478;
+}
+#check3m:checked ~ .input-box--pink {
+  background-color: #d6936d;
 }
 
 .modal__product-item--green:hover {

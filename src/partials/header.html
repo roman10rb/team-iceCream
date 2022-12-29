@@ -10,16 +10,22 @@
 
       <ul class="mobile-menu-desktop">
         <li class="mobile-menu-desktop__item">
-          <a class="mobile-menu-desktop__link" href="#hero">Home</a>
+          <a class="mobile-menu-desktop__link currenthero" href="#hero">Home</a>
         </li>
         <li class="mobile-menu-desktop__item">
-          <a class="mobile-menu-desktop__link" href="#about">How it’s made?</a>
+          <a class="mobile-menu-desktop__link currentabout" href="#about"
+            >How it’s made?</a
+          >
         </li>
         <li class="mobile-menu-desktop__item">
-          <a class="mobile-menu-desktop__link" href="#products">Our products</a>
+          <a class="mobile-menu-desktop__link currentproducts" href="#products"
+            >Our products</a
+          >
         </li>
         <li class="mobile-menu-desktop__item">
-          <a class="mobile-menu-desktop__link" href="#contacts">Contact</a>
+          <a class="mobile-menu-desktop__link currentcontacts" href="#contacts"
+            >Contact</a
+          >
         </li>
       </ul>
 
@@ -103,13 +109,7 @@
 
             <ul class="modal__product-list">
               <li class="modal__product-item modal__product-item--green">
-                <label for="ice-creem1">
-                  <input
-                    type="checkbox"
-                    name="ice-creem1"
-                    id="ice-creem1"
-                    value="check"
-                  />
+                <div class="input-box--green">
                   <div class="modal__box-circle modal__box-circle--green">
                     <img
                       class="modal__image"
@@ -125,42 +125,46 @@
                     />
                     <p class="modal__product-text">ice cream</p>
                   </div>
-                </label>
+                </div>
               </li>
 
               <li class="modal__product-item modal__product-item--yellow">
-                <div class="modal__box-circle modal__box-circle--yellow">
-                  <img
-                    class="modal__image"
-                    srcset="
-                      ./images/products/2_md@1x.jpg 1x,
-                      ./images/products/2_md@2x.jpg 2x
-                    "
-                    src="./images/products/2_md@1x.jpg"
-                    alt="ice-creem"
-                    width="132"
-                    height="132"
-                    loading="lazy"
-                  />
-                  <p class="modal__product-text">ice coffee</p>
+                <div class="input-box--yellow">
+                  <div class="modal__box-circle modal__box-circle--yellow">
+                    <img
+                      class="modal__image"
+                      srcset="
+                        ./images/products/2_md@1x.jpg 1x,
+                        ./images/products/2_md@2x.jpg 2x
+                      "
+                      src="./images/products/2_md@1x.jpg"
+                      alt="ice-creem"
+                      width="132"
+                      height="132"
+                      loading="lazy"
+                    />
+                    <p class="modal__product-text">ice coffee</p>
+                  </div>
                 </div>
               </li>
 
               <li class="modal__product-item modal__product-item--pink">
-                <div class="modal__box-circle modal__box-circle--pink">
-                  <img
-                    class="modal__image"
-                    srcset="
-                      ./images/products/3_md@1x.jpg 1x,
-                      ./images/products/3_md@2x.jpg 2x
-                    "
-                    src="./images/products/3_md@1x.jpg"
-                    alt="ice-creem"
-                    width="132"
-                    height="132"
-                    loading="lazy"
-                  />
-                  <p class="modal__product-text">milkshake</p>
+                <div class="input-box--pink">
+                  <div class="modal__box-circle modal__box-circle--pink">
+                    <img
+                      class="modal__image"
+                      srcset="
+                        ./images/products/3_md@1x.jpg 1x,
+                        ./images/products/3_md@2x.jpg 2x
+                      "
+                      src="./images/products/3_md@1x.jpg"
+                      alt="ice-creem"
+                      width="132"
+                      height="132"
+                      loading="lazy"
+                    />
+                    <p class="modal__product-text">milkshake</p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -215,13 +219,7 @@
 
     <ul class="modal__product-list">
       <li class="modal__product-item modal__product-item--green">
-        <label for="ice-creem1">
-          <input
-            type="checkbox"
-            name="ice-creem1"
-            id="ice-creem1"
-            value="check"
-          />
+        <div class="input-box--green">
           <div class="modal__box-circle modal__box-circle--green">
             <img
               class="modal__image"
@@ -237,42 +235,46 @@
             />
             <p class="modal__product-text">ice cream</p>
           </div>
-        </label>
+        </div>
       </li>
 
       <li class="modal__product-item modal__product-item--yellow">
-        <div class="modal__box-circle modal__box-circle--yellow">
-          <img
-            class="modal__image"
-            srcset="
-              ./images/products/2_md@1x.jpg 1x,
-              ./images/products/2_md@2x.jpg 2x
-            "
-            src="./images/products/2_md@1x.jpg"
-            alt="ice-creem"
-            width="132"
-            height="132"
-            loading="lazy"
-          />
-          <p class="modal__product-text">ice coffee</p>
+        <div class="input-box--yellow">
+          <div class="modal__box-circle modal__box-circle--yellow">
+            <img
+              class="modal__image"
+              srcset="
+                ./images/products/2_md@1x.jpg 1x,
+                ./images/products/2_md@2x.jpg 2x
+              "
+              src="./images/products/2_md@1x.jpg"
+              alt="ice-creem"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <p class="modal__product-text">ice coffee</p>
+          </div>
         </div>
       </li>
 
       <li class="modal__product-item modal__product-item--pink">
-        <div class="modal__box-circle modal__box-circle--pink">
-          <img
-            class="modal__image"
-            srcset="
-              ./images/products/3_md@1x.jpg 1x,
-              ./images/products/3_md@2x.jpg 2x
-            "
-            src="./images/products/3_md@1x.jpg"
-            alt="ice-creem"
-            width="132"
-            height="132"
-            loading="lazy"
-          />
-          <p class="modal__product-text">milkshake</p>
+        <div class="input-box--pink">
+          <div class="modal__box-circle modal__box-circle--pink">
+            <img
+              class="modal__image"
+              srcset="
+                ./images/products/3_md@1x.jpg 1x,
+                ./images/products/3_md@2x.jpg 2x
+              "
+              src="./images/products/3_md@1x.jpg"
+              alt="ice-creem"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <p class="modal__product-text">milkshake</p>
+          </div>
         </div>
       </li>
     </ul>
