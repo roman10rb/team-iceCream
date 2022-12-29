@@ -441,7 +441,7 @@
   cursor: url(../images/cursor.png), pointer;
 }
 
-.modal__product-item--green input:checked .modal__product-item--green label {
+.modal__product-item--green input:checked ~ .modal__product-item--green {
   background-color: #96af8c;
 }
 
